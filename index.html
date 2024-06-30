@@ -4,11 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
+    <!-- <div id="loader" class="w-full h-[100vh] bg-black absolute top-0 z-[99]">
+
+    </div> -->
+    <div id="main" class="w-full h-[100vh] bg-black text-white">
+        <div id="page1" class="px-4 sm:px-12 py-3 pt-8 sm:pt-6 w-full h-[100vh]">
+            <div class="navbar w-full flex items-center justify-between">
+                <div id="logo" class="sm:w-[15%] h-8 overflow-hidden">
+                    <span id="up" class="inline-block">
+                        <h1 class="text-2xl">Mountain Dew</h1>
+                        <h1 class="text-2xl hidden sm:block">Mountain Dew</h1>
+                    </span>
+                </div>
+                <div id="nav-part2" class="hidden sm:block sm:flex justify-between w-[35%] text-xl ">
+                    <a href="#" class="hover:text-green-500">Products</a>
+                    <a href="#" class="hover:text-green-500">Risk Takers</a>
+                    <a href="#" class="hover:text-green-500">About</a>
+                    <a href="#" class="hover:text-green-500">Contact</a>
+                </div>
+                <i class="ri-menu-line text-2xl sm:w-[15%] flex justify-end"></i>
+
+            </div>
+            <div class="can relative w-full h-[90%] bg-green-800 mt-5 flex items-center overflow-hidden">
+                <div class="can-image absolute z-[10] w-full h-full top-0 left-0 flex items-center justify-center">
+                    <img id="Can" class="w-[70%] opacity-[85%] sm:opacity-100 sm:w-[19%]" src="/assets/Can.png" alt="">
+                </div>
+                <h1 id="dothedew" class="uppercase text-[13vw] -ml-[42%] overflow-hidden leading-[11vw]">Do The Dew
+                    <!-- <span  class="inline-block">Do The Dew</span> -->
+                </h1>
+                <!-- <div class="absolute uppercase text-center leading-[34vw] sm:hidden text-[32vw]">
+                    <h1>Do</h1>
+                    <h1>the</h1>
+                    <h1>dew</h1>
+                </div> -->
+            </div>
+        </div>
+
+        <div id="page2" class="w-full h-[100vh]">
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="script.js"></script>
 </body>
