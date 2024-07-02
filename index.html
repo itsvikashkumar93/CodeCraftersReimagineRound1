@@ -12,45 +12,180 @@
 </head>
 
 <body>
-    <!-- <div id="loader" class="w-full h-[100vh] bg-black absolute top-0 z-[99]">
-
-    </div> -->
-    <div id="main" class="w-full h-[100vh] bg-black text-white">
+    <div id="loader" class="w-full h-[100vh] bg-green-900 absolute top-0 z-[99] flex items-end p-10">
+        <div class="h-[30vh]">
+            <h1 class="text-white text-[4vw]">Unleash The Thrill....</h1>
+            <h2 id="loaderNum" class="text-white text-[9vw] leading-[8vw]">0</h2>
+        </div>
+    </div>
+    <div id="main" class=" text-white">
         <div id="page1" class="px-4 sm:px-12 py-3 pt-8 sm:pt-6 w-full h-[100vh]">
             <div class="navbar w-full flex items-center justify-between">
-                <div id="logo" class="sm:w-[15%] h-8 overflow-hidden">
-                    <span id="up" class="inline-block">
+                <div class="sm:w-[15%] h-8 overflow-hidden">
+                    <span class="inline-block sm:hover:-translate-y-[51%] transition duration-[0.5s] cursor-pointer">
                         <h1 class="text-2xl">Mountain Dew</h1>
                         <h1 class="text-2xl hidden sm:block">Mountain Dew</h1>
                     </span>
                 </div>
                 <div id="nav-part2" class="hidden sm:block sm:flex justify-between w-[35%] text-xl ">
-                    <a href="#" class="hover:text-green-500">Products</a>
-                    <a href="#" class="hover:text-green-500">Risk Takers</a>
-                    <a href="#" class="hover:text-green-500">About</a>
-                    <a href="#" class="hover:text-green-500">Contact</a>
+                    <a href="#" class="relative overflow-hidden">Products</a>
+                    <a href="#" class="relative overflow-hidden">Risk Takers</a>
+                    <a href="#" class="relative overflow-hidden">About</a>
+                    <a href="#" class="relative overflow-hidden">Contact</a>
                 </div>
-                <i class="ri-menu-line text-2xl sm:w-[15%] flex justify-end"></i>
-
+                <span class="sm:w-[15%] flex justify-end ">
+                    <i class="ri-menu-line text-2xl cursor-pointer hover:text-green-600"></i>
+                </span>
             </div>
-            <div class="can relative w-full h-[90%] bg-green-800 mt-5 flex items-center overflow-hidden">
-                <div class="can-image absolute z-[10] w-full h-full top-0 left-0 flex items-center justify-center">
-                    <img id="Can" class="w-[70%] opacity-[85%] sm:opacity-100 sm:w-[19%]" src="/assets/Can.png" alt="">
+            <div class="can relative w-full h-[90%] mt-5 flex items-center overflow-hidden">
+                <div class="video">
+                    <video class="opacity-50" muted autoplay loop src="/assets/video.webm"></video>
                 </div>
-                <h1 id="dothedew" class="uppercase text-[13vw] -ml-[42%] overflow-hidden leading-[11vw]">Do The Dew
-                    <!-- <span  class="inline-block">Do The Dew</span> -->
-                </h1>
-                <!-- <div class="absolute uppercase text-center leading-[34vw] sm:hidden text-[32vw]">
-                    <h1>Do</h1>
-                    <h1>the</h1>
-                    <h1>dew</h1>
-                </div> -->
+
+                <div class="w-full h-full absolute flex items-center">
+                    <div class="">
+                        <h1 class="uppercase text-[13vw] tracking-tight leading-[13vw] overflow-hidden">
+                            <span class="riskUtha inline-block select-none">Risk Utha</span>
+                        </h1>
+                        <h1 class="uppercase text-[13vw] tracking-tight leading-[13vw] overflow-hidden">
+                            <span class="naamBana inline-block select-none">Naam Bana</span>
+                        </h1>
+                    </div>
+                </div>
+                <img id="Can" class="w-[70%] left-[0%] opacity-[85%] absolute sm:opacity-100 sm:w-[19%]"
+                    src="/assets/Can2.png" alt="">
             </div>
         </div>
 
-        <div id="page2" class="w-full h-[100vh]">
+    <!-- <div id="page2" class="w-full h-[100vh]">
 
+        </div> -->
+
+    <div class="page3">
+        <h1>PRODUCTS</h1>
+        <div class="box">
+            <img class="img1" src="assets/Can.png" alt="" srcset="" />
+            <div class="card">
+                <div class="content">
+                    <h3>Mountain Dew <br>
+                        Can</h3>
+                    <ul>
+                        <li>(250 ML)</li>
+                        <li>35Rs /-</li>
+                    </ul>
+                    <a class="px-5 py-2 font-medium mt-2" href="#">Buy Now</a>
+                </div>
+            </div>
         </div>
+        <div class="box">
+            <img class="img2" src="assets/GlassBottle.png" alt="" srcset="" />
+            <div class="card">
+                <div class="content">
+                    <h3>Mountain Dew <br>
+                        Glass Bottle</h3>
+                    <ul>
+                        <li>(200 ML)</li>
+                        <li>20Rs /-</li>
+                    </ul>
+                    <a class="px-5 py-2 font-medium mt-2" href="#">Buy Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <img class="img3" src="assets/Bottle.png" alt="" srcset="" />
+            <div class="card">
+                <div class="content">
+                    <h3>Mountain Dew <br>
+                        Bottle</h3>
+                    <ul>
+                        <li>(600 ML)</li>
+                        <li>40Rs /-</li>
+                    </ul>
+                    <a class="px-5 py-2 font-medium mt-2" href="#">Buy Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <img class="img4" src="assets/Bottle2.png" alt="" srcset="" />
+            <div class="card">
+                <div class="content">
+                    <h3>Mountain Dew <br>
+                        Bottle</h3>
+                    <ul>
+                        <li>(1.5 L)</li>
+                        <li>75Rs /-</li>
+                    </ul>
+                    <a class="px-5 py-2 font-medium mt-2" href="#">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="page4" class="min-h-screen w-full px-4 sm:px-12 mt-20 text-white">
+        <h1 class="p-5 text-zinc-300 md:text-[6vw] text-[12vw] leading-[4vw] text-center font-medium ">Our</h1>
+        <h1 class="mb-10 p-5 text-zinc-300 md:text-[6vw] text-[12vw] leading-[4vw] text-center font-medium ">Risk
+            Takers</h1>
+
+        <div id="container" class="flex flex-col w-full gap-3 sm:gap-0">
+            <div class="first w-full flex flex-col sm:flex-row relative h-[38vh] gap-3 sm:h-[40vh] md:w-full">
+                <img class="rounded-sm object-cover h-[45%] w-full sm:h-full sm:w-[55%]"
+                    src="assets/risk_takers_img7.jpg" alt="">
+
+                <div class="sm:w-[45%] w-[95%] flex flex-col gap-2 items-center justify-center">
+                    <h2 class="text-3xl font-medium text-center">Deepa Malik</h2>
+                    <h4 class="text-center text-lg">Deepa Malik is an Indian athlete. She started
+                        her
+                        career at the age of 30. She is the first Indian woman to win a medal in Paralympic Games
+                        and won a silver medal at the 2016 Summer Paralympics in shot put. </h4>
+                </div>
+
+
+            </div>
+
+            <div id="rt" class="flex flex-col justify-between sm:justify-start sm:flex-row relative sm:h-[40vh] w-full my-5">
+                <div class="second w-full relative h-[55%] sm:h-full flex flex-col-reverse sm:flex-row sm:justify-center justify-end gap-2 sm:gap-10 sm:items-center sm:w-[50%]">
+
+                    <div class="h-[20vh] w-[90%] sm:h-full sm:w-[45%] flex flex-col gap-2 items-center justify-center ">
+                        <h2 class="text-3xl font-medium text-center">Archana Sardana</h2>
+                        <h4 class=" text-center text-lg ">Archana Sardana is India's first female
+                            BASE jumper. She is a certified skydiver and was the first person to skydive with the
+                            Indian flag in the USA.</h4>
+                    </div>
+
+                    <img class="rounded-sm object-cover h-[60%] w-full sm:h-[80%] sm:w-[45%] "
+                        src="assets/risk_takers_img6.jpg" alt="">
+                </div>
+                <div class="third relative sm:h-full sm:flex justify-center mt-8 gap-5 sm:gap-10 items-center sm:w-[50%]">
+                    
+                    <img class="rounded-sm object-cover h-[25vh] w-full sm:h-[80%] sm:w-[45%] "
+                        src="assets/risk_takers_img3.jpg" alt="">
+
+                    <div id="text"
+                        class="h-[18vh] w-[95%] sm:mt-0 sm:h-full sm:w-[45%] flex flex-col gap-2 items-center justify-center">
+                        <h2 class="text-3xl leading-[3vw] font-medium text-center"> The Fall</h2>
+                        <h4 class="text-center text-lg ">At Mountain Dew, we're more than
+                            just a drink. We're a symbol of excitement, energy, and adventure. Our story began in
+                            the 1940s.</h4>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="flex relative flex-col-reverse sm:flex-row h-[45vh] sm:h-[50vh] w-full">
+                <div id="text"
+                    class="sm:w-[45%] h-[55%] sm:h-full flex flex-col gap-2 items-center mt-5 sm:mt-0 sm:justify-center">
+                    <h2 class="text-3xl  font-medium text-center">Satyendra Verma</h2>
+                    <h4 class="sm:w-[80%] text-center sm:text-lg ">Satyendra Verma is a pioneer in India when it
+                        comes
+                        to base jumping, wingsuit flying & skydiving, and hopes to bring these adventure sports to
+                        India soon. Verma is nothing short of a legend for his incredible adventurous history.</h4>
+                </div>
+                <img class="rounded-sm object-cover h-[45%] w-full sm:h-full sm:w-[55%]"
+                    src="assets/risk_takers_img1.jpg" alt="">
+
+            </div>
+        </div>
+    </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
@@ -62,6 +197,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
         integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script src="vanilla-tilt.min.js"></script>
 
     <script src="script.js"></script>
 </body>

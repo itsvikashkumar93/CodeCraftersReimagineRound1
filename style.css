@@ -1,44 +1,162 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "gilroy";
 }
 
-html, body{
+html,
+body {
     width: 100%;
     height: 100%;
+    background: linear-gradient(to right, rgb(0, 61, 0), rgb(0, 0, 0));
 }
 
-#logo #up{
-    transition: 0.5s;
-    cursor: pointer;
+#nav-part2 a::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    background: green;
+    height: 0.3vh;
+    bottom: -5%;
+    left: -100%;
+    transition: 0.3s;
+}
+#nav-part2 a:hover::before{
+    left: 0;
 }
 
-#up:hover{
-    transform: translateY(-51%);
-    /* color: aqua; */
-}
-
-#dothedew{
+.riskUtha, .naamBana {
     transform-origin: bottom left;
 }
 
-#Can{
-    position: absolute;
-    /* animation-name: move;
-    animation-duration: 5s; */
 
-    /* animation: move 2s ease-in-out infinite alternate; */
+
+.page3 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* max-width: 12000px; */
+    flex-wrap: wrap;
+    z-index: 1;
+    /* overflow: hidden; */
+    margin-top: 75px;
 }
 
-@keyframes move {
-    from{
-        transform: translateY(-30px);
-        /* left: 20px; */
-    }
-    to{
-        transform: translateY(30px);
-        /* left: 50px; */
-    }
+.page3 h1 {
+    position: absolute;
+    color: rgba(6, 255, 6, 0.463);
+    font-size: 50px;
+    top: -50px;
+}
+
+.box {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    margin: 50px 50px 0px 50px;
+    background: transparent;
+}
+
+.img1{
+    height: 90%;
+    position: absolute;
+    z-index: 1;
+    top: -10%;
+    right: 10px;
+}
+
+.img2 {
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: -19%;
+    right: 10px;
+}
+
+.img3 {
+    height: 90%;
+    position: absolute;
+    z-index: 1;
+    top: -10%;
+    right: 10px;
+}
+
+.img4 {
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: -20%;
+    right: 20px;
+}
+
+.page3 .card {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.page3 .card .content {
+    /* display: none; */
+    margin-left: 50px;
+    padding: 20px;
+    text-align: center;
+    transition: ease-in-out .5s;
+}
+
+.page3 .card:hover .content {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
+.page3 .card .content h3 {
+    font-size: 1.8em;
+    line-height: 1.1em;
+    color: #fff;
+    z-index: 1;
+}
+
+/* .page3 .card .content .price {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #fff;
+    z-index: 1;
+} */
+
+.page3 .card .content ul li {
+    margin: 2vh 0;
+    list-style: none;
+    font-size: 1em;
+    line-height: 0.6em;
+    color: #fff;
+    font-weight: 300;
+}
+
+.page3 .card .content a {
+    position: relative;
+    display: inline-block;
+    background: #fff;
+    color: #000;
+    border-radius: 20px;
+    text-decoration: none;
+    /* font-weight: 500; */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.page3 .card .content a:hover {
+    box-shadow: 20px 20px 50px rgb(0, 255, 119);
 }
