@@ -65,7 +65,7 @@ const gsapAnimation = () => {
     gsap.from(".riskUtha, .naamBana", {
         opacity: 0,
         // rotate: 100,
-        y:350,
+        y:250,
         duration: 1.5,
         ease: [0.37, 0, 0.63, 1],
         // stagger: 1,
@@ -79,13 +79,8 @@ const gsapAnimation = () => {
     })
 }
 
-
-
-
 LoadingAnimation()
 LocomotiveJs();
-gsapAnimation()
-
 
 
 if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
@@ -96,8 +91,7 @@ if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navig
         glare: true,
         "max-glare": 0,
     })
-    
 }
 else {
-    gsapForMobile();
+    // gsapForMobile();
 }
