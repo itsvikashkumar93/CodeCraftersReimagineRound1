@@ -12,7 +12,7 @@ body {
     background: linear-gradient(to right, rgb(0, 61, 0), rgb(0, 0, 0));
 }
 
-#nav-part2 a::before{
+#nav-part2 a::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -22,74 +22,17 @@ body {
     left: -100%;
     transition: 0.3s;
 }
-#nav-part2 a:hover::before{
+
+#nav-part2 a:hover::before {
     left: 0;
 }
 
-.riskUtha, .naamBana {
+.riskUtha,
+.naamBana {
     transform-origin: bottom left;
 }
 
-
-
-.page3 {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* max-width: 12000px; */
-    flex-wrap: wrap;
-    z-index: 1;
-    /* overflow: hidden; */
-    margin-top: 75px;
-}
-
-.page3 h1 {
-    position: absolute;
-    color: rgba(6, 255, 6, 0.463);
-    font-size: 50px;
-    top: -50px;
-}
-
-.box {
-    position: relative;
-    width: 500px;
-    height: 300px;
-    margin: 50px 50px 0px 50px;
-    background: transparent;
-}
-
-.img1{
-    height: 90%;
-    position: absolute;
-    z-index: 1;
-    top: -10%;
-    right: 10px;
-}
-
-.img2 {
-    height: 100%;
-    position: absolute;
-    z-index: 1;
-    top: -19%;
-    right: 10px;
-}
-
-.img3 {
-    height: 90%;
-    position: absolute;
-    z-index: 1;
-    top: -10%;
-    right: 10px;
-}
-
-.img4 {
-    height: 100%;
-    position: absolute;
-    z-index: 1;
-    top: -20%;
-    right: 20px;
-}
+/* For page3 */
 
 .page3 .card {
     position: relative;
@@ -109,10 +52,6 @@ body {
 }
 
 .page3 .card .content {
-    /* display: none; */
-    margin-left: 50px;
-    padding: 20px;
-    text-align: center;
     transition: ease-in-out .5s;
 }
 
@@ -128,14 +67,6 @@ body {
     color: #fff;
     z-index: 1;
 }
-
-/* .page3 .card .content .price {
-    font-size: 40px;
-    margin-bottom: 20px;
-    font-size: 1.8em;
-    color: #fff;
-    z-index: 1;
-} */
 
 .page3 .card .content ul li {
     margin: 2vh 0;
