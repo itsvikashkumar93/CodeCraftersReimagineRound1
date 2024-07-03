@@ -1,8 +1,21 @@
+@font-face {
+    font-family: 'DejaVu';
+    src: url('./Fonts/DejaVuSans.ttf');
+}
+@font-face {
+    font-family: 'DejaVu-light';
+    src: url('./Fonts/DejaVuSansCondensed.ttf');
+}
+@font-face {
+    font-family: 'gilroy';
+    src: url('./Fonts//Gilroy-Light.otf');
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "gilroy";
+    font-family: "DejaVu";
 }
 
 html,
@@ -10,6 +23,10 @@ body {
     width: 100%;
     height: 100%;
     background: linear-gradient(to right, rgb(0, 61, 0), rgb(0, 0, 0));
+}
+
+#nav-part2 a{
+    font-family: 'gilroy';
 }
 
 #nav-part2 a::before {
@@ -30,6 +47,14 @@ body {
 .riskUtha,
 .naamBana {
     transform-origin: bottom left;
+}
+
+.page2 p{
+    font-family: 'gilroy';
+}
+
+#page4 h4{
+    font-family: 'gilroy';
 }
 
 /* For page3 */
@@ -90,4 +115,34 @@ body {
 
 .page3 .card .content a:hover {
     box-shadow: 20px 20px 50px rgb(0, 255, 119);
+}
+
+/* Footer */
+footer {
+    /* background: linear-gradient(to right, rgb(0, 61, 0), rgb(0, 0, 0)); */
+    position: relative;
+    /* background-color: #2d2d2d; */
+    /* color: white; */
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Add relative positioning to the footer */
+}
+
+.semicircle-img {
+    position: absolute;
+    bottom: 0;
+    right: 5vw;
+    width: 500px;
+    /* Adjust the width as needed */
+    height: 270px;
+    /* Adjust the height as needed */
+    background-image: url('assets/hrithik-roshan.jpg');
+    /* Add the path to your image */
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 19vw;
+    /* Half of the width and height */
+    border-top-right-radius: 19vw;
 }

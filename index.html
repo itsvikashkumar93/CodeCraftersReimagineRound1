@@ -13,14 +13,14 @@
 </head>
 
 <body>
-    <div id="loader" class="w-full h-[100vh] bg-green-900 absolute top-0 z-[99] flex items-end p-10">
+    <div id="loader" class="w-full h-[100vh]  bg-green-900 absolute top-0 z-[99] flex items-end p-10">
         <div class="h-[30vh]">
             <h1 class="text-white text-[4vw]">Unleash The Thrill....</h1>
             <h2 id="loaderNum" class="text-white text-[9vw] leading-[8vw]">0</h2>
         </div>
     </div>
     <div id="main" class=" text-white">
-        <div id="page1" class="px-4 sm:px-12 py-3 pt-8 sm:pt-6 w-full h-[100vh]">
+        <div id="page1" class="px-4 sm:px-12 py-3 pt-8 sm:pt-6 w-full h-[70vh] sm:h-[100vh]">
             <div class="navbar w-full flex items-center justify-between">
                 <div class="sm:w-[15%] h-8 overflow-hidden">
                     <span class="inline-block sm:hover:-translate-y-[51%] transition duration-[0.5s] cursor-pointer">
@@ -39,12 +39,13 @@
                 </span>
             </div>
             <div class="can relative w-full h-[90%] mt-5 flex items-center overflow-hidden">
-                <div class="video">
-                    <video class="opacity-50" muted autoplay loop src="/assets/video.webm"></video>
+                <div class="video w-full h-full flex items-center justify-center">
+                    <video class="opacity-50 w-full h-full object-cover" muted autoplay loop
+                        src="/assets/video.webm"></video>
                 </div>
 
                 <div class="w-full h-full absolute flex items-center">
-                    <div class="">
+                    <div class="hidden sm:block">
                         <h1 class="uppercase text-[13vw] tracking-tight leading-[13vw] overflow-hidden">
                             <span class="riskUtha inline-block select-none">Risk Utha</span>
                         </h1>
@@ -53,13 +54,15 @@
                         </h1>
                     </div>
                 </div>
-                <img id="Can" class="w-[70%] left-[0%] opacity-[85%] absolute sm:opacity-100 sm:w-[19%]"
+                <img id="Can" class="w-[70%] hidden sm:block left-[0%] opacity-[85%] absolute sm:opacity-100 sm:w-[19%]"
                     src="/assets/Can2.png" alt="">
             </div>
         </div>
-
-        <div class="page2 px-4 min-h-[100vh] w-full">
-            <h1 class="sm:text-center text-[9vw] sm:text-[4vw] mt-5 sm:mt-0">About Us</h1>
+        <div data-scroll data-scroll-speed="-1.3" class="page2 px-4 min-h-[100vh] w-full sm:mb-32 sm:mt-24">
+            <h1
+                class="sm:text-center text-[10vw] leading-[8vw] sm:leading-[6vw] sm:text-[4vw] mt-5 sm:mt-0 overflow-hidden">
+                <span id="page2H1" class="inline-block">About Us</span>
+            </h1>
             <div id="box1" class="w-full sm:h-[70vh] flex flex-col sm:flex-row gap-5 sm:gap-0">
                 <div class="sm:w-[35%] sm:h-full w-full">
                     <div id="box2-1-1"
@@ -111,13 +114,15 @@
                 <h4 class="text-3xl mb-1">Ignite Your Passion</h4>
                 <p class="text-lg text-center w-[95%] sm:w-[25%]">
                     Feel the burn, chase the adrenaline, and ignite your passion with
-                    every drop of Mountain Dwe.
+                    every drop of Mountain Dew.
                 </p>
             </div>
         </div>
 
-        <div class="page3 px-4 z-[99] mt-20">
-            <h1 class="sm:text-center text-[9vw] sm:text-[4vw] my-3 sm:mt-0">PRODUCTS</h1>
+        <div class="page3 px-4 z-[99] mt-20 sm:mt-40">
+            <h1 class="sm:text-center overflow-hidden text-[10vw] sm:text-[4vw] my-3 sm:mt-0">
+                <span id="page3H1" class="inline-block">Products</span>
+            </h1>
             <div class="flex items-center justify-center flex-wrap">
                 <div class="box relative bg-transparent w-full sm:mx-14 my-8 mb-0 sm:h-[45vh] sm:w-[30vw]">
                     <img class="img1 h-[100%] sm:h-[90%] absolute z-[1] -top-[10%] right-2" src="assets/Can.png" alt=""
@@ -183,14 +188,18 @@
 
         </div>
 
-        <div id="page4" class="min-h-screen w-full px-4 sm:px-12 mt-14 text-white">
+        <div data-scroll data-scroll-speed="-1.5" id="page4" class="min-h-screen w-full px-4 sm:px-12 mt-14 sm:my-28 text-white">
             <h1
-                class="text-zinc-300 md:text-[6vw] text-[12vw] leading-[12.5vw] sm:leading-[6.5vw] sm:text-center font-medium ">
-                Our</h1>
+                class="overflow-hidden text-zinc-300 sm:text-[5vw] text-[12vw] leading-[12.5vw] sm:leading-[5.5vw] sm:text-center font-medium ">
+                <span class="page4H1 inline-block">
+                    Our</span>
+            </h1>
             <h1
-                class="mb-10 text-zinc-300 md:text-[6vw] text-[12vw] leading-[12.5vw] sm:leading-[6.5vw] sm:text-center font-medium ">
-                Risk
-                Takers</h1>
+                class="overflow-hidden mb-10 text-zinc-300 sm:text-[5vw] text-[12vw] leading-[12.5vw] sm:leading-[5.5vw] sm:text-center font-medium ">
+                <span class="page4H1 inline-block">
+                    Risk
+                    Takers</span>
+            </h1>
 
             <div id="container" class="flex flex-col w-full gap-3 sm:gap-0">
                 <div class="first w-full flex flex-col sm:flex-row relative h-[38vh] gap-3 sm:h-[40vh] md:w-full">
@@ -208,8 +217,7 @@
 
                 </div>
 
-                <div id="rt"
-                    class="flex flex-col justify-between sm:justify-start sm:flex-row relative sm:h-[40vh] w-full my-5">
+                <div id="rt" class="flex flex-col justify-between sm:justify-start sm:flex-row relative sm:h-[40vh] w-full my-5 sm:my-6">
                     <div
                         class="second w-full relative h-[55%] sm:h-full flex flex-col-reverse sm:flex-row sm:justify-center justify-end gap-2 sm:gap-10 sm:items-center sm:w-[50%]">
 
@@ -225,7 +233,7 @@
                             src="assets/risk_takers_img6.jpg" alt="">
                     </div>
                     <div
-                        class="third relative sm:h-full sm:flex justify-center mt-8 gap-5 sm:gap-10 items-center sm:w-[50%]">
+                        class="third relative sm:h-full sm:flex justify-center mt-8 sm:mt-0 gap-5 sm:gap-10 items-center sm:w-[50%]">
                         <img class="rounded-sm object-cover h-[25vh] w-full sm:h-[80%] sm:w-[45%] "
                             src="assets/risk_takers_img3.jpg" alt="">
 
@@ -255,6 +263,46 @@
                 </div>
             </div>
         </div>
+
+        <footer class="px-4 sm:px-16 h-[80vh] mt-20">
+            <div class="container mx-auto py-10 sm:flex-row justify-between items-start sm:items-center">
+                <div class="w-full flex  items-center justify-between border-b border-white ">
+                    <h2 class="text-[6vw] leading-[6vw] mb-8 font-medium">Mountain <br> Dew</h2>
+                    <form class="space-y-2 w-full sm:w-1/3 hidden sm:block">
+                        <label for="email" class="text-sm text-gray-400">Sign up for extra <span class="text-white">10%
+                                Discount</span></label>
+                        <div class="flex items-center relative">
+                            <input type="email" id="footerEmail" placeholder="Enter your email"
+                                class="w-[90%] px-4 py-2 rounded-md bg-gray-800 text-white border border-gray-700 focus:outline-none">
+                            <i id="footerArrow" class="ri-arrow-right-circle-fill text-4xl cursor-pointer text-green-600 hover:text-zinc-400 absolute right-1"></i>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="w-full sm:w-1/3 flex flex-col md:flex-row justify-between mt-8 space-y-8 md:space-y-0 md:space-x-8">
+                    <div>
+                        <h3 class="font-medium text-3xl mb-4">Find your way</h3>
+                        <ul class="space-y-2 ml-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Home</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Products</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-medium text-3xl mb-4">Destinations</h3>
+                        <ul class="space-y-2 ml-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Uganda</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Rwanda</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Tanzania</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Namibia</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Semicircle Image -->
+            <div class="semicircle-img"></div>
+        </footer>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>

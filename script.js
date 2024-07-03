@@ -61,11 +61,10 @@ const LoadingAnimation = () => {
 }
 
 const gsapAnimation = () => {
-
     gsap.from(".riskUtha, .naamBana", {
         opacity: 0,
         // rotate: 100,
-        y:250,
+        y: 250,
         duration: 1.5,
         ease: [0.37, 0, 0.63, 1],
         // stagger: 1,
@@ -77,7 +76,58 @@ const gsapAnimation = () => {
         delay: 3.8
         // delay: 4.3
     })
+
+    gsap.from('#page2H1', {
+        opacity: 0,
+        y: 100,
+        duration: 0.6,
+        scrollTrigger: {
+            trigger: '#page2H1',
+            scroller: '#main',
+            start: "top 70%",
+            end: "top 40%",
+        }
+    })
+    gsap.from('#page3H1', {
+        opacity: 0,
+        y: 100,
+        duration: 0.6,
+        scrollTrigger: {
+            trigger: '#page3H1',
+            scroller: '#main',
+            // markers: true,
+            start: "top 80%",
+            end: "top 50%",
+            // scrub: 1
+        }
+    })
+    gsap.from('.page4H1', {
+        opacity: 0,
+        y: 100,
+        duration: 0.8,
+        scrollTrigger: {
+            trigger: '.page4H1',
+            scroller: '#main',
+            // markers: true,
+            start: "top 80%",
+            end: "top 50%",
+            // scrub: 1
+        }
+    })
 }
+
+const footerEmailClear = () => {
+    const footerEmail = document.querySelector('#footerEmail');
+    const footerArrow = document.querySelector('#footerArrow');
+
+    footerEmail.addEventListener('keyup', (e) => {
+        footerArrow.addEventListener('click', ()=>{
+            e.target.value = "";
+        })
+    })
+
+}
+footerEmailClear();
 
 LoadingAnimation()
 LocomotiveJs();
@@ -85,7 +135,7 @@ LocomotiveJs();
 
 if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     gsapAnimation();
-    VanillaTilt.init(document.querySelectorAll(".box"),{
+    VanillaTilt.init(document.querySelectorAll(".box"), {
         max: 25,
         speed: 400,
         glare: true,
