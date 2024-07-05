@@ -25,8 +25,13 @@ body {
     background: linear-gradient(to right, rgb(0, 61, 0), rgb(0, 0, 0));
 }
 
+/* #hamburger h3{
+    font-family: 'gilroy';
+} */
+
 #nav-part2 a{
     font-family: 'gilroy';
+    /* background: #0b700bd4; */
 }
 
 #nav-part2 a::before {

@@ -13,14 +13,21 @@
 </head>
 
 <body>
-    <div id="loader" class="w-full h-[100vh]  bg-green-900 absolute top-0 z-[99] flex items-end p-10">
+    <!-- <div id="loader" class="w-full h-[100vh] fixed bg-green-900 top-0 z-[99] flex items-end p-10">
         <div class="h-[30vh]">
             <h1 class="text-white text-[4vw]">Unleash The Thrill....</h1>
             <h2 id="loaderNum" class="text-white text-[9vw] leading-[8vw]">0</h2>
         </div>
+    </div> -->
+    <div id="hamburger" class="hidden absolute px-8 py-28 right-0 bg-[#0b700bd4] z-[999] h-[100vh] w-full sm:w-[25%] ">
+        <h3 class="text-4xl my-3">Home</h3>
+        <h3 class="text-4xl my-3">Products</h3>
+        <h3 class="text-4xl my-3">Risk Takers</h3>
+        <h3 class="text-4xl my-3">About</h3>
+        <h3 class="text-4xl my-3">Contacts</h3>
     </div>
     <div id="main" class=" text-white">
-        <div id="page1" class="px-4 sm:px-12 py-3 pt-8 sm:pt-6 w-full h-[70vh] sm:h-[100vh]">
+        <div id="home" class="allPages px-4 sm:px-12 py-3 pt-8 sm:pt-6 w-full h-[70vh] sm:h-[100vh]">
             <div class="navbar w-full flex items-center justify-between">
                 <div class="sm:w-[15%] h-8 overflow-hidden">
                     <span class="inline-block sm:hover:-translate-y-[51%] transition duration-[0.5s] cursor-pointer">
@@ -28,14 +35,15 @@
                         <h1 class="text-2xl hidden sm:block">Mountain Dew</h1>
                     </span>
                 </div>
-                <div id="nav-part2" class="hidden sm:block sm:flex justify-between w-[35%] text-xl ">
+                <div id="nav-part2" class="hidden sm:block sm:flex justify-between w-[45%] text-xl ">
+                    <a href="#" class="active relative overflow-hidden">Home</a>
                     <a href="#" class="relative overflow-hidden">Products</a>
                     <a href="#" class="relative overflow-hidden">Risk Takers</a>
                     <a href="#" class="relative overflow-hidden">About</a>
                     <a href="#" class="relative overflow-hidden">Contact</a>
                 </div>
-                <span class="sm:w-[15%] flex justify-end ">
-                    <i class="ri-menu-line text-2xl cursor-pointer hover:text-green-600"></i>
+                <span class="sm:w-[15%] bg-green-900 flex justify-end ">
+                    <i id="hamIcon" class="ri-menu-line text-2xl cursor-pointer hover:text-green-600"></i>
                 </span>
             </div>
             <div class="can relative w-full h-[90%] mt-5 flex items-center overflow-hidden">
@@ -58,7 +66,8 @@
                     src="/assets/Can2.png" alt="">
             </div>
         </div>
-        <div data-scroll data-scroll-speed="-1.3" class="page2 px-4 min-h-[100vh] w-full sm:mb-32 sm:mt-24">
+        <div id="about" data-scroll data-scroll-speed="-1.3"
+            class="allPages page2 px-4 min-h-[100vh] w-full sm:mb-32 sm:mt-24">
             <h1
                 class="sm:text-center text-[10vw] leading-[8vw] sm:leading-[6vw] sm:text-[4vw] mt-5 sm:mt-0 overflow-hidden">
                 <span id="page2H1" class="inline-block">About Us</span>
@@ -69,7 +78,7 @@
                         class="sm:px-14 sm:h-[50%] my-5 sm:my-0 w-full flex flex-col items-center justify-center">
                         <h3 class="text-2xl">⚡️</h3>
                         <h4 class="text-3xl mb-1">Unleash the Beast</h4>
-                        <p class="text-lg text-center w-[98%] sm:w-[90%] ">
+                        <p class="text-lg text-center w-[95%] sm:w-[90%] ">
                             Our potent formula ignites your inner beast, propelling you to
                             conquer the wildest challenges.
                         </p>
@@ -78,7 +87,7 @@
                         class="sm:px-14 sm:h-[50%] mt-5 sm:mt-0 w-full flex flex-col items-center justify-center">
                         <h3 class="text-2xl">🏔️</h3>
                         <h4 class="text-3xl mb-1">Born from Adventure</h4>
-                        <p class="text-lg text-center w-[98%] sm:w-[90%] ">
+                        <p class="text-lg text-center w-[95%] sm:w-[90%] ">
                             Forged in the heart of the mountains, Mountain Due fuels your wild
                             spirit and untamed pursuits.
                         </p>
@@ -102,7 +111,7 @@
                     <div class="sm:px-14 sm:h-[50%] my-5 sm:my-0 w-full flex flex-col items-center justify-center">
                         <h3 class="text-2xl">🌟</h3>
                         <h4 class="text-3xl mb-1">Join the Elite</h4>
-                        <p class="text-lg text-center w-full sm:w-[90%] ">
+                        <p class="text-lg text-center w-[95%] sm:w-[90%] ">
                             Become part of an elite community that lives for the thrill,
                             embraces the extreme, and conquers the impossible.
                         </p>
@@ -112,14 +121,14 @@
             <div id="box2" class="flex flex-col items-center justify-center sm:h-[20vh] w-full">
                 <h3 class="text-2xl">🔥</h3>
                 <h4 class="text-3xl mb-1">Ignite Your Passion</h4>
-                <p class="text-lg text-center w-[95%] sm:w-[25%]">
+                <p class="text-lg text-center w-[90%] sm:w-[25%]">
                     Feel the burn, chase the adrenaline, and ignite your passion with
                     every drop of Mountain Dew.
                 </p>
             </div>
         </div>
 
-        <div class="page3 px-4 z-[99] mt-20 sm:mt-40">
+        <div id="products" class="allPages page3 px-4 z-[99] mt-10 sm:mt-40">
             <h1 class="sm:text-center overflow-hidden text-[10vw] sm:text-[4vw] my-3 sm:mt-0">
                 <span id="page3H1" class="inline-block">Products</span>
             </h1>
@@ -188,7 +197,8 @@
 
         </div>
 
-        <div data-scroll data-scroll-speed="-1.5" id="page4" class="min-h-screen w-full px-4 sm:px-12 mt-14 sm:my-28 text-white">
+        <div data-scroll data-scroll-speed="-1.5" id="risk"
+            class="allPages min-h-screen w-full px-4 sm:px-12 mt-14 sm:my-28 text-white">
             <h1
                 class="overflow-hidden text-zinc-300 sm:text-[5vw] text-[12vw] leading-[12.5vw] sm:leading-[5.5vw] sm:text-center font-medium ">
                 <span class="page4H1 inline-block">
@@ -217,7 +227,8 @@
 
                 </div>
 
-                <div id="rt" class="flex flex-col justify-between sm:justify-start sm:flex-row relative sm:h-[40vh] w-full my-5 sm:my-6">
+                <div id="rt"
+                    class="flex flex-col justify-between sm:justify-start sm:flex-row relative sm:h-[40vh] w-full my-5 sm:my-6">
                     <div
                         class="second w-full relative h-[55%] sm:h-full flex flex-col-reverse sm:flex-row sm:justify-center justify-end gap-2 sm:gap-10 sm:items-center sm:w-[50%]">
 
@@ -264,7 +275,7 @@
             </div>
         </div>
 
-        <footer class="px-4 sm:px-16 h-[80vh] mt-20">
+        <footer class="allPages px-4 sm:px-16 h-[80vh] mt-20">
             <div class="container mx-auto py-10 sm:flex-row justify-between items-start sm:items-center">
                 <div class="w-full flex  items-center justify-between border-b border-white ">
                     <h2 class="text-[6vw] leading-[6vw] mb-8 font-medium">Mountain <br> Dew</h2>
@@ -274,12 +285,14 @@
                         <div class="flex items-center relative">
                             <input type="email" id="footerEmail" placeholder="Enter your email"
                                 class="w-[90%] px-4 py-2 rounded-md bg-gray-800 text-white border border-gray-700 focus:outline-none">
-                            <i id="footerArrow" class="ri-arrow-right-circle-fill text-4xl cursor-pointer text-green-600 hover:text-zinc-400 absolute right-1"></i>
+                            <i id="footerArrow"
+                                class="ri-arrow-right-circle-fill text-4xl cursor-pointer text-green-600 hover:text-zinc-400 absolute right-1"></i>
                         </div>
                     </form>
                 </div>
 
-                <div class="w-full sm:w-1/3 flex flex-col md:flex-row justify-between mt-8 space-y-8 md:space-y-0 md:space-x-8">
+                <div
+                    class="w-full sm:w-1/3 flex flex-col md:flex-row justify-between mt-8 space-y-8 md:space-y-0 md:space-x-8">
                     <div>
                         <h3 class="font-medium text-3xl mb-4">Find your way</h3>
                         <ul class="space-y-2 ml-2">

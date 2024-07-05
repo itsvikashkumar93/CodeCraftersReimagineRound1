@@ -23,6 +23,61 @@ const LocomotiveJs = () => {
     ScrollTrigger.refresh();
 }
 
+const handleNavbar = () => {
+    let allPages = document.querySelectorAll('.allPages');
+    let navLinks = document.querySelectorAll('#nav-part2 a');
+    window.onscroll = () => {
+        allPages.forEach(sec => {
+            let top = window.scrollY;
+            let offset = sec.offsetTop - 150;
+            let height = sec.offsetHeight;
+            let id = sec.getAttribute('id');
+            if (top >= offset && top < offset + height) {
+                navLinks.forEach(links => {
+                    links.classList.remove('active');
+                    document.querySelector('#nav-part2 a[href*=' + id + ']').classList.add('active');
+                });
+            };
+        });
+        let header = document.querySelector('header');
+        header.classList.toggle('sticky', window.scrollY > 100)
+
+        menuIcon.classList.remove('bx-x');
+        navbar.classList.remove('active');
+    };
+}
+
+const handleHamburger = () => {
+    var hamIcon = document.querySelector("#hamIcon");
+    var ham = 0;
+    hamIcon.addEventListener("click", function () {
+        if (ham == 0) {
+            gsap.to("#hamburger", {
+                display: "block"
+            })
+            gsap.to("#hamburger", {
+                // opacity: 1,
+                top: 0,
+                duration: 0.5
+            })
+            // document.body.style.overflow = 'hidden';
+            ham = 1;
+        }
+        else {
+            var tl = gsap.timeline();
+            tl.to("#hamburger", {
+                // opacity: 0,
+                top: "-100vh"
+            })
+            tl.to("#hamburger", {
+                display: "none"
+            })
+            // document.body.style.overflow = 'auto';
+            ham = 0;
+        }
+    })
+}
+
 const LoadingAnimation = () => {
     const video = document.querySelector('.video video');
     video.pause();
@@ -121,14 +176,15 @@ const footerEmailClear = () => {
     const footerArrow = document.querySelector('#footerArrow');
 
     footerEmail.addEventListener('keyup', (e) => {
-        footerArrow.addEventListener('click', ()=>{
+        footerArrow.addEventListener('click', () => {
             e.target.value = "";
         })
     })
 
 }
+handleHamburger()
+handleNavbar()
 footerEmailClear();
-
 LoadingAnimation()
 LocomotiveJs();
 
