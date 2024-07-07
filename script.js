@@ -182,21 +182,74 @@ const footerEmailClear = () => {
     })
 
 }
-handleHamburger()
-handleNavbar()
+
+const productWindowHandler = () => {
+    const product1 = document.querySelector('#product1');
+    const product2 = document.querySelector('#product2');
+    const product3 = document.querySelector('#product3');
+    const product4 = document.querySelector('#product4');
+
+    const windowCont = document.querySelector('#windowCont');
+    const window1 = document.querySelector('#window1');
+    const window2 = document.querySelector('#window2');
+    const window3 = document.querySelector('#window3');
+    const window4 = document.querySelector('#window4');
+
+    const clearAnimations = () => {
+        gsap.killTweensOf([windowCont, window1, window2, window3, window4]);
+    };
+
+    product1.addEventListener('mouseenter', () => {
+        clearAnimations();
+        animateWindows(0, 0);
+    });
+
+    product2.addEventListener('mouseenter', () => {
+        clearAnimations();
+        animateWindows(35, 40);
+    });
+
+    product3.addEventListener('mouseenter', () => {
+        clearAnimations();
+        animateWindows(70, 80);
+    });
+
+    product4.addEventListener('mouseenter', () => {
+        clearAnimations();
+        animateWindows(105, 120);
+    });
+
+    const animateWindows = (pos, pos2) => {
+        gsap.to(windowCont, {
+            y: pos + 'vh'
+        });
+        gsap.to(window1, {
+            y: -pos2 + 'vh'
+        });
+        gsap.to(window2, {
+            y: -pos2 + 'vh'
+        });
+        gsap.to(window3, {
+            y: -pos2 + 'vh'
+        });
+        gsap.to(window4, {
+            y: -pos2 + 'vh'
+        });
+    };
+};
+
+productWindowHandler();
+
+productWindowHandler();
+// handleHamburger()
+handleNavbar();
 footerEmailClear();
-LoadingAnimation()
+LoadingAnimation();
 LocomotiveJs();
 
 
 if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     gsapAnimation();
-    VanillaTilt.init(document.querySelectorAll(".box"), {
-        max: 25,
-        speed: 400,
-        glare: true,
-        "max-glare": 0,
-    })
 }
 else {
     // gsapForMobile();

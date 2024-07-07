@@ -13,12 +13,12 @@
 </head>
 
 <body>
-    <!-- <div id="loader" class="w-full h-[100vh] fixed bg-green-900 top-0 z-[99] flex items-end p-10">
+    <div id="loader" class="w-full h-[100vh] fixed bg-green-900 top-0 z-[99] flex items-end p-10">
         <div class="h-[30vh]">
             <h1 class="text-white text-[4vw]">Unleash The Thrill....</h1>
             <h2 id="loaderNum" class="text-white text-[9vw] leading-[8vw]">0</h2>
         </div>
-    </div> -->
+    </div>
     <div id="hamburger" class="hidden absolute px-8 py-28 right-0 bg-[#0b700bd4] z-[999] h-[100vh] w-full sm:w-[25%] ">
         <h3 class="text-4xl my-3">Home</h3>
         <h3 class="text-4xl my-3">Products</h3>
@@ -42,7 +42,7 @@
                     <a href="#" class="relative overflow-hidden">About</a>
                     <a href="#" class="relative overflow-hidden">Contact</a>
                 </div>
-                <span class="sm:w-[15%] bg-green-900 flex justify-end ">
+                <span class="sm:w-[15%] flex justify-end ">
                     <i id="hamIcon" class="ri-menu-line text-2xl cursor-pointer hover:text-green-600"></i>
                 </span>
             </div>
@@ -128,76 +128,70 @@
             </div>
         </div>
 
-        <div id="products" class="allPages page3 px-4 z-[99] mt-10 sm:mt-40">
-            <h1 class="sm:text-center overflow-hidden text-[10vw] sm:text-[4vw] my-3 sm:mt-0">
-                <span id="page3H1" class="inline-block">Products</span>
-            </h1>
-            <div class="flex items-center justify-center flex-wrap">
-                <div class="box relative bg-transparent w-full sm:mx-14 my-8 mb-0 sm:h-[45vh] sm:w-[30vw]">
-                    <img class="img1 h-[100%] sm:h-[90%] absolute z-[1] -top-[10%] right-2" src="assets/Can.png" alt=""
-                        srcset="" />
-                    <div class="card">
-                        <div class="content ml-10 sm:ml-14 p-4 text-center">
-                            <h3>Mountain Dew <br>
-                                Can</h3>
-                            <ul>
-                                <li>(250 ML)</li>
-                                <li>35Rs /-</li>
-                            </ul>
-                            <a class="px-5 py-2 font-medium mt-2" href="#">Buy Now</a>
-                        </div>
-                    </div>
+        <div id="products" class="min-h-[100vh] w-full relative ">
+            <div id="product1" class="w-full px-24 h-[35vh] flex items-center justify-between hover:bg-[#003d00]">
+                <h1 class="text-5xl">Mountain Dew Can</h1>
+                <div class="w-1/4 h-full flex flex-col items-center justify-center">
+                    <ul>
+                        <li class="text-center">(250 ML)</li>
+                        <li class="text-center">35Rs /-</li>
+                    </ul>
+                    <a class="px-5 py-2 font-medium mt-2 bg-green-700 rounded text-sm" href="#">Buy Now</a>
                 </div>
-                <div class="box relative bg-transparent w-full sm:mx-14 my-8 mb-0 sm:h-[45vh] sm:w-[30vw]">
-                    <img class="img2 h-[100%] absolute z-[1] -top-[5%] sm:-top-[20%] right-2"
-                        src="assets/GlassBottle.png" alt="" srcset="" />
-                    <div class="card">
-                        <div class="content ml-10 sm:ml-14 p-4 text-center">
-                            <h3>Mountain Dew <br>
-                                Glass Bottle</h3>
-                            <ul>
-                                <li>(200 ML)</li>
-                                <li>20Rs /-</li>
-                            </ul>
-                            <a class="px-5 py-2 font-medium mt-2" href="#">Buy Now</a>
-                        </div>
-                    </div>
+            </div>
+            <div id="product2" class="w-full px-24 h-[35vh] flex items-center justify-between hover:bg-[#003d00]">
+                <h1 class="text-5xl">Mountain Dew Glass Bottle</h1>
+                <div class="w-1/4 h-full flex flex-col items-center justify-center">
+                    <ul>
+                        <li class="text-center">(200 ML)</li>
+                        <li class="text-center">20Rs /-</li>
+                    </ul>
+                    <a class="px-5 py-2 font-medium mt-2 bg-green-700 rounded text-sm" href="#">Buy Now</a>
                 </div>
-                <div class="box relative bg-transparent w-full sm:mx-14 my-8 mb-0 sm:h-[45vh] sm:w-[30vw]">
-                    <img class="img3 h-[90%] absolute z-[1] top-[5%] sm:-top-[10%] right-2" src="assets/Bottle.png"
-                        alt="" srcset="" />
-                    <div class="card">
-                        <div class="content ml-10 sm:ml-14 p-4 text-center">
-                            <h3>Mountain Dew <br>
-                                Bottle</h3>
-                            <ul>
-                                <li>(600 ML)</li>
-                                <li>40Rs /-</li>
-                            </ul>
-                            <a class="px-5 py-2 font-medium mt-2" href="#">Buy Now</a>
-                        </div>
-                    </div>
+            </div>
+            <div id="product3" class="w-full px-24 h-[35vh] flex items-center justify-between hover:bg-[#003d00]">
+                <h1 class="text-5xl">Mountain Dew Bottle</h1>
+                <div class="w-1/4 h-full flex flex-col items-center justify-center">
+                    <ul>
+                        <li class="text-center">(600 ML)</li>
+                        <li class="text-center">40Rs /-</li>
+                    </ul>
+                    <a class="px-5 py-2 font-medium mt-2 bg-green-700 rounded text-sm" href="#">Buy Now</a>
                 </div>
-                <div class="box relative bg-transparent w-full sm:mx-14 my-8 mb-0 sm:h-[45vh] sm:w-[30vw]">
-                    <img class="img4 h-[100%] absolute z-[1] -top-[5%] sm:-top-[20%] right-6" src="assets/Bottle2.png"
-                        alt="" srcset="" />
-                    <div class="card">
-                        <div class="content ml-10 sm:ml-14 p-4 text-center">
-                            <h3>Mountain Dew <br>
-                                Bottle</h3>
-                            <ul>
-                                <li>(1.5 L)</li>
-                                <li>75Rs /-</li>
-                            </ul>
-                            <a class="px-5 py-2 font-medium mt-2" href="#">Buy Now</a>
-                        </div>
-                    </div>
+            </div>
+            <div id="product4" class="w-full px-24 h-[35vh] flex items-center justify-between hover:bg-[#003d00]">
+                <h1 class="text-5xl">Mountain Dew Bottle</h1>
+                <div class="w-1/4 h-full flex flex-col items-center justify-center">
+                    <ul>
+                        <li class="text-center">(1.5 L)</li>
+                        <li class="text-center">75Rs /-</li>
+                    </ul>
+                    <a class="px-5 py-2 font-medium mt-2 bg-green-700 rounded text-sm" href="#">Buy Now</a>
                 </div>
             </div>
 
+            <div id="windowContainer" class="absolute top-[-2.5vh] w-full h-full pointer-events-none">
+                <div id="windowCont" class="absolute w-[25vw] h-[40vh] left-[50%] overflow-hidden rounded-lg">
+                    <div id="window1" class="w-full h-full bg-zinc-800">
+                        <img class="h-full w-full object-cover" src="./assets/can22.jpg" alt="">
+                    </div>
+                    <div id="window2" class="w-full h-full bg-zinc-600">
+                        <img class="h-full w-full object-cover" src="./assets/GlassBottle.jpg" alt="">
+
+                    </div>
+                    <div id="window3" class="w-full h-full bg-zinc-800">
+                        <img class="h-full w-full object-cover" src="./assets/Bottle.jpg" alt="">
+
+                    </div>
+                    <div id="window4" class="w-full h-full bg-zinc-600">
+                        <img class="h-full w-full object-cover" src="./assets/Bottle2.jpg" alt="">
+                    </div>
+
+                </div>
+            </div>
         </div>
 
-        <div data-scroll data-scroll-speed="-1.5" id="risk"
+        <div data-scroll data-scroll-speed="-1.2" id="risk"
             class="allPages min-h-screen w-full px-4 sm:px-12 mt-14 sm:my-28 text-white">
             <h1
                 class="overflow-hidden text-zinc-300 sm:text-[5vw] text-[12vw] leading-[12.5vw] sm:leading-[5.5vw] sm:text-center font-medium ">
@@ -275,46 +269,84 @@
             </div>
         </div>
 
-        <footer class="allPages px-4 sm:px-16 h-[80vh] mt-20">
+        <footer class="bg-zinc-900 sm:px-16 py-0 min-h-screen">
             <div class="container mx-auto py-10 sm:flex-row justify-between items-start sm:items-center">
-                <div class="w-full flex  items-center justify-between border-b border-white ">
-                    <h2 class="text-[6vw] leading-[6vw] mb-8 font-medium">Mountain <br> Dew</h2>
-                    <form class="space-y-2 w-full sm:w-1/3 hidden sm:block">
-                        <label for="email" class="text-sm text-gray-400">Sign up for extra <span class="text-white">10%
-                                Discount</span></label>
-                        <div class="flex items-center relative">
-                            <input type="email" id="footerEmail" placeholder="Enter your email"
-                                class="w-[90%] px-4 py-2 rounded-md bg-gray-800 text-white border border-gray-700 focus:outline-none">
-                            <i id="footerArrow"
-                                class="ri-arrow-right-circle-fill text-4xl cursor-pointer text-green-600 hover:text-zinc-400 absolute right-1"></i>
-                        </div>
-                    </form>
+                <div class="w-full items-center border-b border-white">
+                    <img class="rounded-sm object-cover h-[45%] w-full sm:h-full sm:w-[25%] mb-5"
+                        src="assets/Footer-dothedew.png" alt="" />
+                    <p class="mb-8 text-lg"><span class="text-lime-400 text-2xl">
+                            Mountain Dew: </span>Fuel your Adventures with the bold, refreshing taste <br>
+                        that keeps you energized and ready for anything.
+                    </p>
+                    <!-- <h2 class="text-[6vw] leading-[6vw] mb-8 font-medium">Mountain <br> Dew</h2> -->
                 </div>
 
                 <div
-                    class="w-full sm:w-1/3 flex flex-col md:flex-row justify-between mt-8 space-y-8 md:space-y-0 md:space-x-8">
+                    class="border-b border-white w-full py-10 pb-20 flex flex-col md:flex-row justify-between space-y-8 md:space-y-0 md:space-x-8">
                     <div>
-                        <h3 class="font-medium text-3xl mb-4">Find your way</h3>
-                        <ul class="space-y-2 ml-2">
-                            <li><a href="#" class="text-gray-400 hover:text-white transition">Home</a></li>
-                            <li><a href="#" class="text-gray-400 hover:text-white transition">About Us</a></li>
-                            <li><a href="#" class="text-gray-400 hover:text-white transition">Products</a></li>
-                            <li><a href="#" class="text-gray-400 hover:text-white transition">Contact Us</a></li>
+                        <h3 class="font-medium text-2xl mb-4 text-lime-400 uppercase">
+                            menu
+                        </h3>
+                        <ul class="space-y-2 ml-1">
+                            <li>
+                                <a href="#" class="text-gray-400 hover:text-white transition uppercase">Home</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-400 hover:text-white transition uppercase">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-400 hover:text-white transition uppercase">Products</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-400 hover:text-white transition uppercase">Contact Us</a>
+                            </li>
                         </ul>
                     </div>
                     <div>
-                        <h3 class="font-medium text-3xl mb-4">Destinations</h3>
-                        <ul class="space-y-2 ml-2">
-                            <li><a href="#" class="text-gray-400 hover:text-white transition">Uganda</a></li>
-                            <li><a href="#" class="text-gray-400 hover:text-white transition">Rwanda</a></li>
-                            <li><a href="#" class="text-gray-400 hover:text-white transition">Tanzania</a></li>
-                            <li><a href="#" class="text-gray-400 hover:text-white transition">Namibia</a></li>
+                        <h3 class="font-medium text-2xl text-lime-400 mb-4">SUPPORT</h3>
+                        <ul class="space-y-2 ml-1">
+                            <li>
+                                <a href="#" class="text-gray-400 hover:text-white transition">ACCESSIBILITY</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-400 hover:text-white transition">SHIPPING AND RETURNS</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-400 hover:text-white transition">TERMS OF USE</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-400 hover:text-white transition">PRIVACY POLICY</a>
+                            </li>
                         </ul>
                     </div>
+                    <form class="space-y-2 w-full sm:w-1/3 mb-8 hidden sm:block">
+                        <label for="email" class="text-sm text-gray-400">Sign up for extra
+                            <span class="text-lime-400">10% Discount</span></label>
+                        <div class="flex items-center relative">
+                            <input type="email" id="footerEmail" placeholder="Enter your email"
+                                class="w-[90%] px-4 py-2 rounded-md bg-gray-800 text-white border border-gray-700 focus:outline-none" />
+                            <i id="footerArrow"
+                                class="ri-arrow-right-circle-fill text-4xl cursor-pointer text-lime-400 hover:text-zinc-400 absolute right-1"></i>
+                        </div>
+                    </form>
+                </div>
+                <div class="flex flex-col mt-7 items-center gap-10">
+                    <p class="text-2xl">INDIA</p>
+                    <div class="flex gap-4">
+                        <a class="bg-white hover:bg-lime-400 p-2 px-3 rounded-full text-black" href=""><i
+                                class="ri-instagram-line text-lg"></i></a><a
+                            class="bg-white hover:bg-lime-400 p-2 px-3 rounded-full text-black" href=""><i
+                                class="ri-youtube-line text-lg"></i></a><a
+                            class="bg-white hover:bg-lime-400 p-2 px-3 rounded-full text-black" href=""><i
+                                class="ri-twitter-x-line text-lg"></i></a><a
+                            class="bg-white hover:bg-lime-400 p-2 px-3 rounded-full text-black" href=""><i
+                                class="ri-tiktok-fill text-lg"></i></a><a
+                            class="bg-white hover:bg-lime-400 p-2 px-3 rounded-full text-black" href=""><i
+                                class="ri-discord-fill text-lg"></i></a>
+                    </div>
+                    <p class="hover:text-lime-400">©2024 Mountain Dew</p>
                 </div>
             </div>
-            <!-- Semicircle Image -->
-            <div class="semicircle-img"></div>
         </footer>
     </div>
 
@@ -328,8 +360,6 @@
         integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-
-    <script src="vanilla-tilt.min.js"></script>
 
     <script src="script.js"></script>
 </body>
