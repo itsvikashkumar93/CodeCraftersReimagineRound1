@@ -13,19 +13,35 @@
 </head>
 
 <body>
-    <!-- <div id="loader" class="w-full h-[100vh] fixed bg-green-900 top-0 z-[99] flex items-end p-10">
-        <div class="h-[30vh]">
-            <h1 class="text-white text-[4vw]">Unleash The Thrill....</h1>
-            <h2 id="loaderNum" class="text-white text-[9vw] leading-[8vw]">0</h2>
+    <div id="loader" class="w-full h-[100vh] fixed bg-zinc-900 top-0 z-[99] flex items-center justify-center p-10">
+        <div id="loaderDiv"
+            class="rotate-[-42deg] overflow-hidden flex flex-col justify-center sm:gap-10 items-center gap-4">
+            <div class="h-[6vh] sm:h-20 overflow-hidden">
+                <span class="inline-block">
+                    <h1 class="text-white text-[12vw] leading-[12.3vw] sm:text-[5vw] sm:leading-[5.3vw] uppercase">
+                        Unleash</h1>
+                    <h1 class="text-white text-[12vw] leading-[12.3vw] sm:text-[5vw] sm:leading-[5.3vw] uppercase">
+                        Unleash</h1>
+                </span>
+            </div>
+            <h1 class="text-lime-400 text-[12vw] leading-[12.3vw] sm:text-[5vw] sm:leading-[5.3vw] uppercase">the</h1>
+            <div class="h-[6vh] sm:h-20 overflow-hidden">
+                <span class="inline-block">
+                    <h1 class="text-white text-[12vw] leading-[12.3vw] sm:text-[5vw] sm:leading-[5.3vw] uppercase">
+                        thrill</h1>
+                    <h1 class="text-white text-[12vw] leading-[12.3vw] sm:text-[5vw] sm:leading-[5.3vw] uppercase">
+                        thrill</h1>
+                </span>
+            </div>
         </div>
-    </div> -->
+    </div>
     <div id="hamburger"
         class="hidden absolute px-8 py-28 overflow-hidden -top-[100%] sm:top-0 bg-black sm:-right-[25vw] text-zinc-200 z-[999] h-[100vh] w-full sm:w-[25%] ">
-        <h3 class="text-4xl my-3 overflow-hidden"><span class="inline-block">Home</span></h3>
-        <h3 class="text-4xl my-3 overflow-hidden"><span class="inline-block">Products</span></h3>
-        <h3 class="text-4xl my-3 overflow-hidden"><span class="inline-block">Risk Takers</span></h3>
-        <h3 class="text-4xl my-3 overflow-hidden"><span class="inline-block">About</span></h3>
-        <h3 class="text-4xl my-3 overflow-hidden"><span class="inline-block">Contacts</span></h3>
+        <h3 class="text-4xl my-3 overflow-hidden cursor-pointer"><span class="inline-block">Home</span></h3>
+        <h3 class="text-4xl my-3 overflow-hidden cursor-pointer"><span class="inline-block">Products</span></h3>
+        <h3 class="text-4xl my-3 overflow-hidden cursor-pointer"><span class="inline-block">Risk Takers</span></h3>
+        <h3 class="text-4xl my-3 overflow-hidden cursor-pointer"><span class="inline-block">About</span></h3>
+        <h3 class="text-4xl my-3 overflow-hidden cursor-pointer"><span class="inline-block">Contacts</span></h3>
         <i id="hamClose" class="ri-close-line absolute top-7 right-3 sm:top-5 sm:left-6 text-4xl cursor-pointer"></i>
     </div>
     <div id="main" class=" text-white">
@@ -73,7 +89,8 @@
             </div>
         </div>
 
-        <div id="page2" class="w-full gap-5 sm:gap-0 sm:h-[100vh] px-4 my-10 overflow-hidden flex-col sm:flex-row flex items-center justify-between sm:px-12">
+        <div id="page2"
+            class="w-full gap-5 sm:gap-0 sm:h-[100vh] px-4 my-10 overflow-hidden flex-col sm:flex-row flex items-center justify-between sm:px-12">
             <div data-scroll data-scroll-speed="-1.8" id="page2-part1" class="w-full sm:w-1/2 sm:h-full sm:py-52">
                 <h6 class="text-lime-400">Brands & Programs</h6>
                 <h1 class="uppercase text-3xl tracking-tight sm:text-[3vw] sm:leading-[3vw] mt-1">Mountain dew's latest
@@ -97,48 +114,60 @@
 
         <div id="products" class="w-full relative my-5">
             <div id="product1"
-                class="product w-full px-4 h-[20vh] sm:px-24 sm:h-[35vh] flex items-center justify-between transition ease-in-out duration-[0.5s]">
+                class="product relative w-full px-4 h-[20vh] sm:px-24 sm:h-[35vh] flex items-center justify-between transition ease-in-out duration-[0.5s]">
                 <h1 class="text-3xl w-[50%] sm:w-full sm:text-5xl">Mountain Dew Can</h1>
                 <div class="sm:w-1/4 h-full flex flex-col items-center justify-center">
                     <ul>
                         <li class="text-center text-sm sm:text-base">(250 ML)</li>
                         <li class="text-center text-sm sm:text-base">35Rs /-</li>
                     </ul>
-                    <a class="px-3 sm:px-5 py-2 font-medium mt-2 bg-lime-400 text-black rounded text-sm" href="#">Buy Now</a>
+                    <a class="px-3 sm:px-5 py-2 font-medium mt-2 bg-lime-400 text-black rounded text-sm" href="#">Buy
+                        Now</a>
                 </div>
+                <!-- <img class="absolute h-[10%] opacity-0 hover:opacity-1 transition duration-[0.4s] sm:hidden"
+                    src="./assets/can22.jpg" alt=""> -->
             </div>
             <div id="product2"
-                class="product w-full px-4 h-[20vh] sm:px-24 sm:h-[35vh] flex items-center justify-between transition ease-in-out duration-[0.5s]">
+                class="product relative w-full px-4 h-[20vh] sm:px-24 sm:h-[35vh] flex items-center justify-between transition ease-in-out duration-[0.5s]">
                 <h1 class="text-3xl w-[50%] sm:w-full sm:text-5xl">Mountain Dew Glass Bottle</h1>
                 <div class="sm:w-1/4 h-full flex flex-col items-center justify-center">
                     <ul>
                         <li class="text-center text-sm sm:text-base">(200 ML)</li>
                         <li class="text-center text-sm sm:text-base">20Rs /-</li>
                     </ul>
-                    <a class="px-3 sm:px-5 py-2 font-medium mt-2 bg-lime-400 text-black rounded text-sm" href="#">Buy Now</a>
+                    <a class="px-3 sm:px-5 py-2 font-medium mt-2 bg-lime-400 text-black rounded text-sm" href="#">Buy
+                        Now</a>
                 </div>
+                <!-- <img class="absolute opacity-0 hover:opacity-1 transition duration-[0.4s] sm:hidden"
+                    src="./assets/GlassBottle.jpg" alt=""> -->
             </div>
             <div id="product3"
-                class="product w-full px-4 h-[20vh] sm:px-24 sm:h-[35vh] flex items-center justify-between transition ease-in-out duration-[0.5s]">
+                class="product relative w-full px-4 h-[20vh] sm:px-24 sm:h-[35vh] flex items-center justify-between transition ease-in-out duration-[0.5s]">
                 <h1 class="text-3xl w-[50%] sm:w-full sm:text-5xl">Mountain Dew Bottle</h1>
                 <div class="sm:w-1/4 h-full flex flex-col items-center justify-center">
                     <ul>
                         <li class="text-center text-sm sm:text-base">(400 ML)</li>
                         <li class="text-center text-sm sm:text-base">40Rs /-</li>
                     </ul>
-                    <a class="px-3 sm:px-5 py-2 font-medium mt-2 bg-lime-400 text-black rounded text-sm" href="#">Buy Now</a>
+                    <a class="px-3 sm:px-5 py-2 font-medium mt-2 bg-lime-400 text-black rounded text-sm" href="#">Buy
+                        Now</a>
                 </div>
+                <!-- <img class="absolute opacity-0 hover:opacity-1 transition duration-[0.4s] sm:hidden"
+                    src="./assets/Bottle.jpg" alt=""> -->
             </div>
             <div id="product4"
-                class="product w-full px-4 h-[20vh] sm:px-24 sm:h-[35vh] flex items-center justify-between transition ease-in-out duration-[0.5s]">
+                class="product relative w-full px-4 h-[20vh] sm:px-24 sm:h-[35vh] flex items-center justify-between transition ease-in-out duration-[0.5s]">
                 <h1 class="text-3xl w-[50%] sm:w-full sm:text-5xl">Mountain Dew Bottle</h1>
                 <div class="sm:w-1/4 h-full flex flex-col items-center justify-center">
                     <ul>
                         <li class="text-center text-sm sm:text-base">(1.5 L)</li>
                         <li class="text-center text-sm sm:text-base">75Rs /-</li>
                     </ul>
-                    <a class="px-3 sm:px-5 py-2 font-medium mt-2 bg-lime-400 text-black rounded text-sm" href="#">Buy Now</a>
+                    <a class="px-3 sm:px-5 py-2 font-medium mt-2 bg-lime-400 text-black rounded text-sm" href="#">Buy
+                        Now</a>
                 </div>
+                <!-- <img class="absolute opacity-0 hover:opacity-1 transition duration-[0.4s] sm:hidden"
+                    src="./assets/Bottle2.jpg" alt=""> -->
             </div>
 
             <div id="windowContainer"
@@ -166,7 +195,7 @@
 
         <div id="about" class="allPages px-4 pb-5 sm:pb-0 min-h-[100vh] w-full sm:mb-10 sm:mt-24">
             <h1 class="sm:text-center text-[10vw] sm:leading-[6vw] sm:text-[4vw] mt-5 sm:mt-0 overflow-hidden">
-                <span id="page2H1" class="inline-block">About Us</span>
+                <span id="page4H1" class="inline-block">About Us</span>
             </h1>
             <div id="box1" class="w-full sm:h-[70vh] flex flex-col sm:flex-row gap-5 sm:gap-0">
                 <div class="sm:w-[35%] sm:h-full w-full">
@@ -231,12 +260,12 @@
                 class="allPages min-h-screen w-full px-4 sm:px-12 mt-14 sm:mt-2 text-white">
                 <h1
                     class="overflow-hidden text-zinc-300 sm:text-[5vw] text-[12vw] leading-[12.5vw] sm:leading-[5.5vw] sm:text-center font-medium ">
-                    <span class="page4H1 inline-block">
+                    <span class="page5H1 inline-block">
                         Our</span>
                 </h1>
                 <h1
                     class="overflow-hidden mb-10 text-zinc-300 sm:text-[5vw] text-[12vw] leading-[12.5vw] sm:leading-[5.5vw] sm:text-center font-medium ">
-                    <span class="page4H1 inline-block">
+                    <span class="page5H1 inline-block">
                         Risk
                         Takers</span>
                 </h1>
@@ -309,7 +338,7 @@
 
         <div class="w-full overflow-hidden">
             <div data-scroll data-scroll-speed="-5"
-                class="w-full min-h-[100vh] py-10 sm:pb-10 bg-zinc-900 px-4 sm:px-12 sm:min-h-screen">
+                class="w-full min-h-[90vh] sm:bg-zinc-900 sm:mt-0 pt-14 pb-20 sm:pt-10 sm:pb-10  px-4 sm:px-12 sm:min-h-screen">
                 <div class="w-full items-center border-b border-white">
                     <img class="rounded-sm object-cover sm:h-[45%] sm:h-full sm:w-[25%] mb-5"
                         src="assets/Footer-dothedew.png" alt="" />
@@ -351,7 +380,7 @@
                         </div>
                     </form>
                 </div>
-                <div class="flex flex-col mt-5 sm:mt-7 items-center gap-2 sm:gap-5">
+                <div class="flex flex-col mt-5 sm:mt-7 items-center gap-4 sm:gap-5">
                     <p class="text-2xl">INDIA</p>
                     <div class="flex gap-4">
                         <a class="bg-white hover:bg-lime-400 w-8 h-8 flex items-center justify-center overflow-hidden p-1 rounded-full text-black"
