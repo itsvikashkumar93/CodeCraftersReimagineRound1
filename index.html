@@ -19,12 +19,14 @@
             <h2 id="loaderNum" class="text-white text-[9vw] leading-[8vw]">0</h2>
         </div>
     </div>
-    <div id="hamburger" class="hidden absolute px-8 py-28 right-0 bg-[#0b700bd4] z-[999] h-[100vh] w-full sm:w-[25%] ">
-        <h3 class="text-4xl my-3">Home</h3>
-        <h3 class="text-4xl my-3">Products</h3>
-        <h3 class="text-4xl my-3">Risk Takers</h3>
-        <h3 class="text-4xl my-3">About</h3>
-        <h3 class="text-4xl my-3">Contacts</h3>
+    <div id="hamburger"
+        class="hidden absolute px-8 py-28 overflow-hidden -top-[100%] sm:top-0 bg-black sm:-right-[25vw] text-zinc-200 z-[999] h-[100vh] w-full sm:w-[25%] ">
+        <h3 class="text-4xl my-3 overflow-hidden"><span class="inline-block">Home</span></h3>
+        <h3 class="text-4xl my-3 overflow-hidden"><span class="inline-block">Products</span></h3>
+        <h3 class="text-4xl my-3 overflow-hidden"><span class="inline-block">Risk Takers</span></h3>
+        <h3 class="text-4xl my-3 overflow-hidden"><span class="inline-block">About</span></h3>
+        <h3 class="text-4xl my-3 overflow-hidden"><span class="inline-block">Contacts</span></h3>
+        <i id="hamClose" class="ri-close-line absolute top-7 right-3 sm:top-5 sm:left-6 text-4xl cursor-pointer"></i>
     </div>
     <div id="main" class=" text-white">
         <div id="home" class="allPages px-4 sm:px-12 py-3 pt-8 sm:pt-6 w-full h-[70vh] sm:h-[100vh]">
@@ -129,7 +131,8 @@
         </div>
 
         <div id="products" class="min-h-[100vh] w-full relative ">
-            <div id="product1" class="w-full px-24 h-[35vh] flex items-center justify-between hover:bg-[#003d00]">
+            <div id="product1"
+                class="w-full px-24 h-[35vh] flex items-center justify-between transition ease-in-out duration-[0.5s] hover:bg-[#003d00]">
                 <h1 class="text-5xl">Mountain Dew Can</h1>
                 <div class="w-1/4 h-full flex flex-col items-center justify-center">
                     <ul>
@@ -139,7 +142,8 @@
                     <a class="px-5 py-2 font-medium mt-2 bg-green-700 rounded text-sm" href="#">Buy Now</a>
                 </div>
             </div>
-            <div id="product2" class="w-full px-24 h-[35vh] flex items-center justify-between hover:bg-[#003d00]">
+            <div id="product2"
+                class="w-full px-24 h-[35vh] flex items-center justify-between transition ease-in-out duration-[0.5s] hover:bg-[#003d00]">
                 <h1 class="text-5xl">Mountain Dew Glass Bottle</h1>
                 <div class="w-1/4 h-full flex flex-col items-center justify-center">
                     <ul>
@@ -149,17 +153,19 @@
                     <a class="px-5 py-2 font-medium mt-2 bg-green-700 rounded text-sm" href="#">Buy Now</a>
                 </div>
             </div>
-            <div id="product3" class="w-full px-24 h-[35vh] flex items-center justify-between hover:bg-[#003d00]">
+            <div id="product3"
+                class="w-full px-24 h-[35vh] flex items-center justify-between transition ease-in-out duration-[0.5s] hover:bg-[#003d00]">
                 <h1 class="text-5xl">Mountain Dew Bottle</h1>
                 <div class="w-1/4 h-full flex flex-col items-center justify-center">
                     <ul>
-                        <li class="text-center">(600 ML)</li>
+                        <li class="text-center">(400 ML)</li>
                         <li class="text-center">40Rs /-</li>
                     </ul>
                     <a class="px-5 py-2 font-medium mt-2 bg-green-700 rounded text-sm" href="#">Buy Now</a>
                 </div>
             </div>
-            <div id="product4" class="w-full px-24 h-[35vh] flex items-center justify-between hover:bg-[#003d00]">
+            <div id="product4"
+                class="w-full px-24 h-[35vh] flex items-center justify-between transition ease-in-out duration-[0.5s] hover:bg-[#003d00]">
                 <h1 class="text-5xl">Mountain Dew Bottle</h1>
                 <div class="w-1/4 h-full flex flex-col items-center justify-center">
                     <ul>
@@ -170,7 +176,8 @@
                 </div>
             </div>
 
-            <div id="windowContainer" class="absolute top-[-2.5vh] w-full h-full pointer-events-none">
+            <div id="windowContainer"
+                class="absolute scale-[0.1] hidden top-[-2.5vh] w-full h-full pointer-events-none">
                 <div id="windowCont" class="absolute w-[25vw] h-[40vh] left-[50%] overflow-hidden rounded-lg">
                     <div id="window1" class="w-full h-full bg-zinc-800">
                         <img class="h-full w-full object-cover" src="./assets/can22.jpg" alt="">
@@ -191,163 +198,173 @@
             </div>
         </div>
 
-        <div data-scroll data-scroll-speed="-1.2" id="risk"
-            class="allPages min-h-screen w-full px-4 sm:px-12 mt-14 sm:my-28 text-white">
-            <h1
-                class="overflow-hidden text-zinc-300 sm:text-[5vw] text-[12vw] leading-[12.5vw] sm:leading-[5.5vw] sm:text-center font-medium ">
-                <span class="page4H1 inline-block">
-                    Our</span>
-            </h1>
-            <h1
-                class="overflow-hidden mb-10 text-zinc-300 sm:text-[5vw] text-[12vw] leading-[12.5vw] sm:leading-[5.5vw] sm:text-center font-medium ">
-                <span class="page4H1 inline-block">
-                    Risk
-                    Takers</span>
-            </h1>
+        <div className="w-full overflow-hidden">
+            <div data-scroll data-scroll-speed="0.2" id="risk"
+                class="allPages min-h-screen w-full px-4 sm:px-12 mt-14 sm:my-28 text-white">
+                <h1
+                    class="overflow-hidden text-zinc-300 sm:text-[5vw] text-[12vw] leading-[12.5vw] sm:leading-[5.5vw] sm:text-center font-medium ">
+                    <span class="page4H1 inline-block">
+                        Our</span>
+                </h1>
+                <h1
+                    class="overflow-hidden mb-10 text-zinc-300 sm:text-[5vw] text-[12vw] leading-[12.5vw] sm:leading-[5.5vw] sm:text-center font-medium ">
+                    <span class="page4H1 inline-block">
+                        Risk
+                        Takers</span>
+                </h1>
 
-            <div id="container" class="flex flex-col w-full gap-3 sm:gap-0">
-                <div class="first w-full flex flex-col sm:flex-row relative h-[38vh] gap-3 sm:h-[40vh] md:w-full">
-                    <img class="rounded-sm object-cover h-[45%] w-full sm:h-full sm:w-[55%]"
-                        src="assets/risk_takers_img7.jpg" alt="">
+                <div id="container" class="flex flex-col w-full gap-3 sm:gap-0">
+                    <div class="first w-full flex flex-col sm:flex-row relative h-[38vh] gap-3 sm:h-[40vh] md:w-full">
+                        <img class="rounded-sm object-cover h-[45%] w-full sm:h-full sm:w-[55%]"
+                            src="assets/risk_takers_img7.jpg" alt="">
 
-                    <div class="sm:w-[45%] w-[95%] flex flex-col gap-2 items-center justify-center">
-                        <h2 class="text-3xl font-medium text-center">Deepa Malik</h2>
-                        <h4 class="text-center text-lg">Deepa Malik is an Indian athlete. She started
-                            her
-                            career at the age of 30. She is the first Indian woman to win a medal in Paralympic Games
-                            and won a silver medal at the 2016 Summer Paralympics in shot put. </h4>
+                        <div class="sm:w-[45%] w-[95%] flex flex-col gap-2 items-center justify-center">
+                            <h2 class="text-3xl font-medium text-center">Deepa Malik</h2>
+                            <h4 class="text-center text-lg">Deepa Malik is an Indian athlete. She started
+                                her
+                                career at the age of 30. She is the first Indian woman to win a medal in Paralympic
+                                Games
+                                and won a silver medal at the 2016 Summer Paralympics in shot put. </h4>
+                        </div>
+
+
                     </div>
 
-
-                </div>
-
-                <div id="rt"
-                    class="flex flex-col justify-between sm:justify-start sm:flex-row relative sm:h-[40vh] w-full my-5 sm:my-6">
-                    <div
-                        class="second w-full relative h-[55%] sm:h-full flex flex-col-reverse sm:flex-row sm:justify-center justify-end gap-2 sm:gap-10 sm:items-center sm:w-[50%]">
-
+                    <div id="rt"
+                        class="flex flex-col justify-between sm:justify-start sm:flex-row relative sm:h-[40vh] w-full my-5 sm:my-6">
                         <div
-                            class="h-[20vh] w-[90%] sm:h-full sm:w-[45%] flex flex-col gap-2 items-center justify-center ">
-                            <h2 class="text-3xl font-medium text-center">Archana Sardana</h2>
-                            <h4 class=" text-center text-lg ">Archana Sardana is India's first female
-                                BASE jumper. She is a certified skydiver and was the first person to skydive with the
-                                Indian flag in the USA.</h4>
+                            class="second w-full relative h-[55%] sm:h-full flex flex-col-reverse sm:flex-row sm:justify-center justify-end gap-2 sm:gap-10 sm:items-center sm:w-[50%]">
+
+                            <div
+                                class="h-[20vh] w-[90%] sm:h-full sm:w-[45%] flex flex-col gap-2 items-center justify-center ">
+                                <h2 class="text-3xl font-medium text-center">Archana Sardana</h2>
+                                <h4 class=" text-center text-lg ">Archana Sardana is India's first female
+                                    BASE jumper. She is a certified skydiver and was the first person to skydive with
+                                    the
+                                    Indian flag in the USA.</h4>
+                            </div>
+
+                            <img class="rounded-sm object-cover h-[60%] w-full sm:h-[80%] sm:w-[45%] "
+                                src="assets/risk_takers_img6.jpg" alt="">
                         </div>
+                        <div
+                            class="third relative sm:h-full sm:flex justify-center mt-8 sm:mt-0 gap-5 sm:gap-10 items-center sm:w-[50%]">
+                            <img class="rounded-sm object-cover h-[25vh] w-full sm:h-[80%] sm:w-[45%] "
+                                src="assets/risk_takers_img3.jpg" alt="">
 
-                        <img class="rounded-sm object-cover h-[60%] w-full sm:h-[80%] sm:w-[45%] "
-                            src="assets/risk_takers_img6.jpg" alt="">
+                            <div id="text"
+                                class="h-[18vh] w-[95%] sm:mt-0 sm:h-full sm:w-[45%] flex flex-col gap-2 items-center justify-center">
+                                <h2 class="text-3xl leading-[3vw] font-medium text-center"> The Fall</h2>
+                                <h4 class="text-center text-lg ">At Mountain Dew, we're more than
+                                    just a drink. We're a symbol of excitement, energy, and adventure. Our story began
+                                    in
+                                    the 1940s.</h4>
+                            </div>
+
+                        </div>
                     </div>
-                    <div
-                        class="third relative sm:h-full sm:flex justify-center mt-8 sm:mt-0 gap-5 sm:gap-10 items-center sm:w-[50%]">
-                        <img class="rounded-sm object-cover h-[25vh] w-full sm:h-[80%] sm:w-[45%] "
-                            src="assets/risk_takers_img3.jpg" alt="">
 
+                    <div class="flex relative flex-col-reverse sm:flex-row h-[45vh] sm:h-[50vh] w-full">
                         <div id="text"
-                            class="h-[18vh] w-[95%] sm:mt-0 sm:h-full sm:w-[45%] flex flex-col gap-2 items-center justify-center">
-                            <h2 class="text-3xl leading-[3vw] font-medium text-center"> The Fall</h2>
-                            <h4 class="text-center text-lg ">At Mountain Dew, we're more than
-                                just a drink. We're a symbol of excitement, energy, and adventure. Our story began in
-                                the 1940s.</h4>
+                            class="sm:w-[45%] h-[55%] sm:h-full flex flex-col gap-2 items-center mt-5 sm:mt-0 sm:justify-center">
+                            <h2 class="text-3xl  font-medium text-center">Satyendra Verma</h2>
+                            <h4 class="sm:w-[80%] text-center sm:text-lg ">Satyendra Verma is a pioneer in India when it
+                                comes
+                                to base jumping, wingsuit flying & skydiving, and hopes to bring these adventure sports
+                                to
+                                India soon. Verma is nothing short of a legend for his incredible adventurous history.
+                            </h4>
                         </div>
+                        <img class="rounded-sm object-cover h-[45%] w-full sm:h-full sm:w-[55%]"
+                            src="assets/risk_takers_img1.jpg" alt="">
 
                     </div>
-                </div>
-
-                <div class="flex relative flex-col-reverse sm:flex-row h-[45vh] sm:h-[50vh] w-full">
-                    <div id="text"
-                        class="sm:w-[45%] h-[55%] sm:h-full flex flex-col gap-2 items-center mt-5 sm:mt-0 sm:justify-center">
-                        <h2 class="text-3xl  font-medium text-center">Satyendra Verma</h2>
-                        <h4 class="sm:w-[80%] text-center sm:text-lg ">Satyendra Verma is a pioneer in India when it
-                            comes
-                            to base jumping, wingsuit flying & skydiving, and hopes to bring these adventure sports to
-                            India soon. Verma is nothing short of a legend for his incredible adventurous history.</h4>
-                    </div>
-                    <img class="rounded-sm object-cover h-[45%] w-full sm:h-full sm:w-[55%]"
-                        src="assets/risk_takers_img1.jpg" alt="">
-
                 </div>
             </div>
         </div>
 
-        <footer class="bg-zinc-900 sm:px-16 py-0 min-h-screen">
-            <div class="container mx-auto py-10 sm:flex-row justify-between items-start sm:items-center">
-                <div class="w-full items-center border-b border-white">
-                    <img class="rounded-sm object-cover h-[45%] w-full sm:h-full sm:w-[25%] mb-5"
-                        src="assets/Footer-dothedew.png" alt="" />
-                    <p class="mb-8 text-lg"><span class="text-lime-400 text-2xl">
-                            Mountain Dew: </span>Fuel your Adventures with the bold, refreshing taste <br>
-                        that keeps you energized and ready for anything.
-                    </p>
-                    <!-- <h2 class="text-[6vw] leading-[6vw] mb-8 font-medium">Mountain <br> Dew</h2> -->
-                </div>
+        <div class="w-full overflow-hidden">
+            <div data-scroll data-scroll-speed="-3" class="w-full bg-zinc-900 sm:px-12 py-0 min-h-screen">
+                <div class="mx-auto w-full py-10 sm:flex-row justify-between items-start sm:items-center">
+                    <div class="w-full items-center border-b border-white">
+                        <img class="rounded-sm object-cover h-[45%] w-full sm:h-full sm:w-[25%] mb-5"
+                            src="assets/Footer-dothedew.png" alt="" />
+                        <p class="mb-8 text-lg"><span class="text-lime-400 text-2xl">
+                                Mountain Dew: </span>Fuel your Adventures with the bold, refreshing taste <br>
+                            that keeps you energized and ready for anything.
+                        </p>
+                    </div>
 
-                <div
-                    class="border-b border-white w-full py-10 pb-20 flex flex-col md:flex-row justify-between space-y-8 md:space-y-0 md:space-x-8">
-                    <div>
-                        <h3 class="font-medium text-2xl mb-4 text-lime-400 uppercase">
-                            menu
-                        </h3>
-                        <ul class="space-y-2 ml-1">
-                            <li>
-                                <a href="#" class="text-gray-400 hover:text-white transition uppercase">Home</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-gray-400 hover:text-white transition uppercase">About Us</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-gray-400 hover:text-white transition uppercase">Products</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-gray-400 hover:text-white transition uppercase">Contact Us</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 class="font-medium text-2xl text-lime-400 mb-4">SUPPORT</h3>
-                        <ul class="space-y-2 ml-1">
-                            <li>
-                                <a href="#" class="text-gray-400 hover:text-white transition">ACCESSIBILITY</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-gray-400 hover:text-white transition">SHIPPING AND RETURNS</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-gray-400 hover:text-white transition">TERMS OF USE</a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-gray-400 hover:text-white transition">PRIVACY POLICY</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <form class="space-y-2 w-full sm:w-1/3 mb-8 hidden sm:block">
-                        <label for="email" class="text-sm text-gray-400">Sign up for extra
-                            <span class="text-lime-400">10% Discount</span></label>
-                        <div class="flex items-center relative">
-                            <input type="email" id="footerEmail" placeholder="Enter your email"
-                                class="w-[90%] px-4 py-2 rounded-md bg-gray-800 text-white border border-gray-700 focus:outline-none" />
-                            <i id="footerArrow"
-                                class="ri-arrow-right-circle-fill text-4xl cursor-pointer text-lime-400 hover:text-zinc-400 absolute right-1"></i>
+                    <div
+                        class="border-b border-white w-full py-10 pb-20 flex flex-col md:flex-row justify-between space-y-8 md:space-y-0 md:space-x-8">
+                        <div>
+                            <h3 class="font-medium text-2xl mb-4 text-lime-400 uppercase">
+                                menu
+                            </h3>
+                            <ul class="space-y-2 ml-1">
+                                <li>
+                                    <a href="#" class="text-gray-400 hover:text-white transition uppercase">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-400 hover:text-white transition uppercase">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-400 hover:text-white transition uppercase">Products</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-400 hover:text-white transition uppercase">Contact
+                                        Us</a>
+                                </li>
+                            </ul>
                         </div>
-                    </form>
-                </div>
-                <div class="flex flex-col mt-7 items-center gap-10">
-                    <p class="text-2xl">INDIA</p>
-                    <div class="flex gap-4">
-                        <a class="bg-white hover:bg-lime-400 p-2 px-3 rounded-full text-black" href=""><i
-                                class="ri-instagram-line text-lg"></i></a><a
-                            class="bg-white hover:bg-lime-400 p-2 px-3 rounded-full text-black" href=""><i
-                                class="ri-youtube-line text-lg"></i></a><a
-                            class="bg-white hover:bg-lime-400 p-2 px-3 rounded-full text-black" href=""><i
-                                class="ri-twitter-x-line text-lg"></i></a><a
-                            class="bg-white hover:bg-lime-400 p-2 px-3 rounded-full text-black" href=""><i
-                                class="ri-tiktok-fill text-lg"></i></a><a
-                            class="bg-white hover:bg-lime-400 p-2 px-3 rounded-full text-black" href=""><i
-                                class="ri-discord-fill text-lg"></i></a>
+                        <div>
+                            <h3 class="font-medium text-2xl text-lime-400 mb-4">SUPPORT</h3>
+                            <ul class="space-y-2 ml-1">
+                                <li>
+                                    <a href="#" class="text-gray-400 hover:text-white transition">ACCESSIBILITY</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-400 hover:text-white transition">SHIPPING AND
+                                        RETURNS</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-400 hover:text-white transition">TERMS OF USE</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-400 hover:text-white transition">PRIVACY POLICY</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <form class="space-y-2 w-full sm:w-1/3 mb-8 hidden sm:block">
+                            <label for="email" class="text-sm text-gray-400">Sign up for extra
+                                <span class="text-lime-400">10% Discount</span></label>
+                            <div class="flex items-center relative">
+                                <input type="email" id="footerEmail" placeholder="Enter your email"
+                                    class="w-[90%] px-4 py-2 rounded-md bg-gray-800 text-white border border-gray-700 focus:outline-none" />
+                                <i id="footerArrow"
+                                    class="ri-arrow-right-circle-fill text-4xl cursor-pointer text-lime-400 hover:text-zinc-400 absolute right-1"></i>
+                            </div>
+                        </form>
                     </div>
-                    <p class="hover:text-lime-400">©2024 Mountain Dew</p>
+                    <div class="flex flex-col mt-7 items-center gap-10">
+                        <p class="text-2xl">INDIA</p>
+                        <div class="flex gap-4">
+                            <a class="bg-white hover:bg-lime-400 p-2 px-3 rounded-full text-black" href=""><i
+                                    class="ri-instagram-line text-lg"></i></a><a
+                                class="bg-white hover:bg-lime-400 p-2 px-3 rounded-full text-black" href=""><i
+                                    class="ri-youtube-line text-lg"></i></a><a
+                                class="bg-white hover:bg-lime-400 p-2 px-3 rounded-full text-black" href=""><i
+                                    class="ri-twitter-x-line text-lg"></i></a><a
+                                class="bg-white hover:bg-lime-400 p-2 px-3 rounded-full text-black" href=""><i
+                                    class="ri-tiktok-fill text-lg"></i></a><a
+                                class="bg-white hover:bg-lime-400 p-2 px-3 rounded-full text-black" href=""><i
+                                    class="ri-discord-fill text-lg"></i></a>
+                        </div>
+                        <p class="hover:text-lime-400">©2024 Mountain Dew</p>
+                    </div>
                 </div>
             </div>
-        </footer>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>

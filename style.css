@@ -2,10 +2,12 @@
     font-family: 'DejaVu';
     src: url('./Fonts/DejaVuSans.ttf');
 }
+
 @font-face {
     font-family: 'DejaVu-light';
     src: url('./Fonts/DejaVuSansCondensed.ttf');
 }
+
 @font-face {
     font-family: 'gilroy';
     src: url('./Fonts//Gilroy-Light.otf');
@@ -26,11 +28,11 @@ body {
     /* background-color: #000; */
 }
 
-/* #hamburger h3{
-    font-family: 'gilroy';
-} */
+#hamburger h3 span {
+    transform-origin: left bottom;
+}
 
-#nav-part2 a{
+#nav-part2 a {
     font-family: 'gilroy';
     /* background: #0b700bd4; */
 }
@@ -55,11 +57,11 @@ body {
     transform-origin: bottom left;
 }
 
-.page2 p{
+.page2 p {
     font-family: 'gilroy';
 }
 
-#page4 h4{
+#page4 h4 {
     font-family: 'gilroy';
 }
 

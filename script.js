@@ -48,33 +48,49 @@ const handleNavbar = () => {
 }
 
 const handleHamburger = () => {
-    var hamIcon = document.querySelector("#hamIcon");
-    var ham = 0;
+    const hamIcon = document.querySelector("#hamIcon");
+    const hamClose = document.querySelector("#hamClose");
     hamIcon.addEventListener("click", function () {
-        if (ham == 0) {
-            gsap.to("#hamburger", {
-                display: "block"
-            })
-            gsap.to("#hamburger", {
-                // opacity: 1,
-                top: 0,
-                duration: 0.5
-            })
-            // document.body.style.overflow = 'hidden';
-            ham = 1;
-        }
-        else {
-            var tl = gsap.timeline();
-            tl.to("#hamburger", {
-                // opacity: 0,
-                top: "-100vh"
-            })
-            tl.to("#hamburger", {
-                display: "none"
-            })
-            // document.body.style.overflow = 'auto';
-            ham = 0;
-        }
+        var tl = gsap.timeline();
+        tl.to("#hamburger", {
+            display: "block",
+            right: 0
+        })
+        tl.from('#hamburger h3 span', {
+            y: 40,
+            rotate: 50,
+            duration: 0.5,
+            stagger: 0.2
+        })
+    })
+    hamClose.addEventListener("click", function () {
+        gsap.to("#hamburger", {
+            display: "none",
+            right: '-25vw'
+        })
+    })
+}
+const handleHamburgerMobile = () => {
+    const hamIcon = document.querySelector("#hamIcon");
+    const hamClose = document.querySelector("#hamClose");
+    hamIcon.addEventListener("click", function () {
+        var tl = gsap.timeline();
+        tl.to("#hamburger", {
+            display: "block",
+            top: 0
+        })
+        tl.from('#hamburger h3 span', {
+            y: 40,
+            rotate: 50,
+            duration: 0.5,
+            stagger: 0.2
+        })
+    })
+    hamClose.addEventListener("click", function () {
+        gsap.to("#hamburger", {
+            display: "none",
+            top: '-100%'
+        })
     })
 }
 
@@ -184,16 +200,35 @@ const footerEmailClear = () => {
 }
 
 const productWindowHandler = () => {
+    const products = document.querySelector('#products');
     const product1 = document.querySelector('#product1');
     const product2 = document.querySelector('#product2');
     const product3 = document.querySelector('#product3');
     const product4 = document.querySelector('#product4');
 
+    const windowContainer = document.querySelector('#windowContainer');
     const windowCont = document.querySelector('#windowCont');
     const window1 = document.querySelector('#window1');
     const window2 = document.querySelector('#window2');
     const window3 = document.querySelector('#window3');
     const window4 = document.querySelector('#window4');
+
+    products.addEventListener('mouseenter', () => {
+        // windowContainer.style.display = 'block'
+        gsap.to(windowContainer, {
+            display: 'block',
+            scale: 1,
+            duration: 0.5,
+        })
+    })
+    products.addEventListener('mouseleave', () => {
+        // windowContainer.style.display = 'none'
+        gsap.to(windowContainer, {
+            display: 'none',
+            scale: 0.1,
+            duration: 0.3,
+        })
+    })
 
     const clearAnimations = () => {
         gsap.killTweensOf([windowCont, window1, window2, window3, window4]);
@@ -241,7 +276,6 @@ const productWindowHandler = () => {
 productWindowHandler();
 
 productWindowHandler();
-// handleHamburger()
 handleNavbar();
 footerEmailClear();
 LoadingAnimation();
@@ -250,7 +284,10 @@ LocomotiveJs();
 
 if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     gsapAnimation();
+    handleHamburger();
+
 }
 else {
     // gsapForMobile();
+    handleHamburgerMobile();
 }
