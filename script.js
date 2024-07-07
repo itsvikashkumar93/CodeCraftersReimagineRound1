@@ -23,30 +23,6 @@ const LocomotiveJs = () => {
     ScrollTrigger.refresh();
 }
 
-const handleNavbar = () => {
-    let allPages = document.querySelectorAll('.allPages');
-    let navLinks = document.querySelectorAll('#nav-part2 a');
-    window.onscroll = () => {
-        allPages.forEach(sec => {
-            let top = window.scrollY;
-            let offset = sec.offsetTop - 150;
-            let height = sec.offsetHeight;
-            let id = sec.getAttribute('id');
-            if (top >= offset && top < offset + height) {
-                navLinks.forEach(links => {
-                    links.classList.remove('active');
-                    document.querySelector('#nav-part2 a[href*=' + id + ']').classList.add('active');
-                });
-            };
-        });
-        let header = document.querySelector('header');
-        header.classList.toggle('sticky', window.scrollY > 100)
-
-        menuIcon.classList.remove('bx-x');
-        navbar.classList.remove('active');
-    };
-}
-
 const handleHamburger = () => {
     const hamIcon = document.querySelector("#hamIcon");
     const hamClose = document.querySelector("#hamClose");
@@ -326,9 +302,8 @@ const productWindowHandler = () => {
 productWindowHandler();
 
 productWindowHandler();
-handleNavbar();
 footerEmailClear();
-LoadingAnimation();
+// LoadingAnimation();
 LocomotiveJs();
 
 
