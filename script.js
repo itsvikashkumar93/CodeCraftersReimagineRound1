@@ -142,7 +142,7 @@ const gsapAnimation = () => {
         delay: 3.9
     })
     gsap.to("#Can", {
-        marginLeft: '75%',
+        marginLeft: '80%',
         duration: 2,
         delay: 3.8
         // delay: 4.3
@@ -185,6 +185,58 @@ const gsapAnimation = () => {
             // scrub: 1
         }
     })
+
+    gsap.from('#about #para1', {
+        x: -450,
+        scrollTrigger: {
+            trigger: "#about",
+            scroller: '#main',
+            start: "top 70%",
+            end: "top 0%",
+            scrub: 1
+        }
+    })
+    gsap.from('#about #para2', {
+        x: -450,
+        scrollTrigger: {
+            trigger: "#about",
+            scroller: '#main',
+            start: "top 60%",
+            end: "top 0%",
+            scrub: 1
+        }
+    })
+    gsap.from('#about #para3', {
+        x: 450,
+        scrollTrigger: {
+            trigger: "#about",
+            scroller: '#main',
+            start: "top 70%",
+            end: "top 0%",
+            scrub: 1
+        }
+    })
+    gsap.from('#about #para4', {
+        x: 450,
+        scrollTrigger: {
+            trigger: "#about",
+            scroller: '#main',
+            start: "top 60%",
+            end: "top 0%",
+            scrub: 1
+        }
+    })
+    gsap.from('#about #img-box', {
+        y: 450,
+        scrollTrigger: {
+            trigger: "#about",
+            scroller: '#main',
+            start: "top 70%",
+            end: "top 0%",
+            scrub: 1
+        }
+    })
+
 }
 
 const footerEmailClear = () => {
@@ -214,7 +266,6 @@ const productWindowHandler = () => {
     const window4 = document.querySelector('#window4');
 
     products.addEventListener('mouseenter', () => {
-        // windowContainer.style.display = 'block'
         gsap.to(windowContainer, {
             display: 'block',
             scale: 1,
@@ -222,7 +273,6 @@ const productWindowHandler = () => {
         })
     })
     products.addEventListener('mouseleave', () => {
-        // windowContainer.style.display = 'none'
         gsap.to(windowContainer, {
             display: 'none',
             scale: 0.1,
@@ -259,7 +309,7 @@ const productWindowHandler = () => {
             y: pos + 'vh'
         });
         gsap.to(window1, {
-            y: -pos2 + 'vh'
+            y: -pos2 + 'vh',
         });
         gsap.to(window2, {
             y: -pos2 + 'vh'
