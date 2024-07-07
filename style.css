@@ -1,16 +1,11 @@
 @font-face {
     font-family: 'DejaVu';
-    src: url('./Fonts/DejaVuSans.ttf');
-}
-
-@font-face {
-    font-family: 'DejaVu-light';
-    src: url('./Fonts/DejaVuSansCondensed.ttf');
+    src: url('./Fonts/DejaVuSans.woff2');
 }
 
 @font-face {
     font-family: 'gilroy';
-    src: url('./Fonts//Gilroy-Light.otf');
+    src: url('./Fonts/Gilroy-Light.woff2');
 }
 
 * {
@@ -50,7 +45,6 @@ body {
 
 #nav-part2 a {
     font-family: 'gilroy';
-    /* background: #0b700bd4; */
 }
 
 #nav-part2 a::before {
@@ -84,34 +78,4 @@ body {
 .product:hover {
     background: linear-gradient(to right, rgb(0, 61, 0), rgb(0, 0, 0));
 
-}
-
-/* Footer */
-footer {
-    /* background: linear-gradient(to right, rgb(0, 61, 0), rgb(0, 0, 0)); */
-    position: relative;
-    /* background-color: #2d2d2d; */
-    /* color: white; */
-    padding: 40px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* Add relative positioning to the footer */
-}
-
-.semicircle-img {
-    position: absolute;
-    bottom: 0;
-    right: 5vw;
-    width: 500px;
-    /* Adjust the width as needed */
-    height: 270px;
-    /* Adjust the height as needed */
-    background-image: url('assets/hrithik-roshan.jpg');
-    /* Add the path to your image */
-    background-size: cover;
-    background-position: center;
-    border-top-left-radius: 19vw;
-    /* Half of the width and height */
-    border-top-right-radius: 19vw;
 }

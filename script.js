@@ -153,7 +153,6 @@ const gsapAnimation = () => {
         scrollTrigger: {
             trigger: '.page4H1',
             scroller: '#main',
-            // markers: true,
             start: "top 80%",
             end: "top 50%",
             scrub: 1
@@ -326,7 +325,6 @@ const productWindowHandler = () => {
 
 
 footerEmailClear();
-// LoadingAnimation();
 LocomotiveJs();
 
 
